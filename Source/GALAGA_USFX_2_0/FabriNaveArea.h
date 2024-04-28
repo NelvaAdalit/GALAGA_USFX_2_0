@@ -16,5 +16,7 @@ class GALAGA_USFX_2_0_API AFabriNaveArea : public AFabriNaves
 public:
 	virtual ANaveEnemiga* CrearNaveEnemiga(FString NaveEnemigaSKU) override;
 
+
+
 	
 };

@@ -37,6 +37,10 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* ShipMeshComponent;
 
+public:
+	float Tiempo_Disparo;
+	float Tiempo_Disparo_Generar;
+	FVector Distancia_Disparo;
 ;
 
 };

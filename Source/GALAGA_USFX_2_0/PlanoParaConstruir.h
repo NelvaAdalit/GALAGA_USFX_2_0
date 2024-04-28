@@ -25,6 +25,7 @@ class GALAGA_USFX_2_0_API IPlanoParaConstruir
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 
+
 	virtual void setArsenal(FString arsenal) = 0;
 	virtual void setCombustibe(FString combustible) = 0;
 	virtual void setRestauracion(FString restauracion) = 0;	

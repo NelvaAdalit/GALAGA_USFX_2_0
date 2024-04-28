@@ -18,7 +18,7 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	AFabriNaves* FabriNaveArea = GetWorld()->SpawnActor<AFabriNaveArea>(AFabriNaveArea::StaticClass());
 	//AFabriNaves* FabriNaveTerrestrre = GetWorld()->SpawnActor<AFabriNaveTerrestre>(AFabriNaveTerrestre::StaticClass());
 
-	FVector PosicionNaveEnemiga = FVector(250.0f, 250.0f, 270.f);
+	FVector PosicionNaveEnemiga = FVector(550.0f, 250.0f, 270.f);
 	//FVector PosicionNaveEnemigaTerrestre = FVector(250.0f, 250.0f, 270.f);
 
 
@@ -27,9 +27,10 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	if (World != nullptr) {
 
 		FVector PosicionNaveEnemigaAreas = PosicionNaveEnemiga;
-		for (int i = 0; i < 11; i++) {
+		for (int i = 0; i < 5; i++) {
 
-			PosicionNaveEnemigaAreas = FVector(PosicionNaveEnemiga.X + 100.0f, PosicionNaveEnemiga.Y + i * 150, PosicionNaveEnemiga.Z);
+
+			PosicionNaveEnemigaAreas = FVector(PosicionNaveEnemiga.X+400.0f, PosicionNaveEnemiga.Y*i +50, PosicionNaveEnemiga.Z);
 			ANaveEnemiga* NaveEnemiga = FabriNaveArea->CrearNaveEnemiga("NaveEnemigaAerea");
 			NaveEnemiga->SetActorLocation(PosicionNaveEnemigaAreas);
 
