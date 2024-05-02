@@ -8,7 +8,7 @@
 #include "FabriNaves.generated.h"
 
 
-UCLASS()
+UCLASS(ABSTRACT)
 class GALAGA_USFX_2_0_API AFabriNaves : public AActor
 {
 	GENERATED_BODY()
@@ -17,22 +17,21 @@ public:
 	// Sets default values for this actor's properties
 	AFabriNaves();
 
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-
+public:
+	virtual void Tick(float DeltaTime) override;
 
 
 public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	static ANaveEnemiga*OrdenarNaveEnemiga(FString NombreNave, UWorld* World, FVector Posicion, FRotator Rotacion);
+	
 
-	virtual ANaveEnemiga* CrearNaveEnemiga(FString NaveEnemigaSKU) PURE_VIRTUAL(AFabriNaves::CrearNaveEnemiga, return nullptr;);
-	ANaveEnemiga* OrdenarNaveEnemiga(FString Categoria);
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
-		UStaticMeshComponent* mallaNaveEnemiga;
 
 
 

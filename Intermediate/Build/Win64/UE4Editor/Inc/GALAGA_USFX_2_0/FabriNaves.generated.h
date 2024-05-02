@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAFabriNaves(); \
 	friend struct Z_Construct_UClass_AFabriNaves_Statics; \
 public: \
-	DECLARE_CLASS(AFabriNaves, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
+	DECLARE_CLASS(AFabriNaves, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
 	DECLARE_SERIALIZER(AFabriNaves)
 
 
@@ -30,14 +30,14 @@ private: \
 	static void StaticRegisterNativesAFabriNaves(); \
 	friend struct Z_Construct_UClass_AFabriNaves_Statics; \
 public: \
-	DECLARE_CLASS(AFabriNaves, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
+	DECLARE_CLASS(AFabriNaves, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
 	DECLARE_SERIALIZER(AFabriNaves)
 
 
 #define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_FabriNaves_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFabriNaves(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFabriNaves) \
+	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFabriNaves) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFabriNaves); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFabriNaves); \
 private: \
@@ -55,7 +55,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AFabriNaves); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFabriNaves); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFabriNaves)
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AFabriNaves)
 
 
 #define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_FabriNaves_h_14_PRIVATE_PROPERTY_OFFSET

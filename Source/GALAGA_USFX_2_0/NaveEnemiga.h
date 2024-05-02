@@ -6,22 +6,28 @@
 #include "GameFramework/Actor.h"
 #include "NaveEnemiga.generated.h"
 
-UCLASS()
+UCLASS(ABSTRACT)
 class GALAGA_USFX_2_0_API ANaveEnemiga : public AActor
 {
 	GENERATED_BODY()
-	
+
 protected:
 	ANaveEnemiga();
 	FString NombreNaveEnemiga;
 	FString VelocidadNaveEnemiga;
+	FVector Posicion;
 	FString DanoProducido;
 	TArray<FString> ArmasNaveEnemiga;
+	float velocidad;
+	float limiteInferior;
+	FString NombreNave;
+
+
+
 public:
-	void mover();
-	void disparo();
-	void Escudo();
-	FString GetNombreNaveEnemiga();
+
+
+	//FString GetNombreNaveEnemiga();
 
 protected:
 
@@ -38,9 +44,11 @@ public:
 	UStaticMeshComponent* ShipMeshComponent;
 
 public:
+
 	float Tiempo_Disparo;
 	float Tiempo_Disparo_Generar;
 	FVector Distancia_Disparo;
+
 ;
 
 };

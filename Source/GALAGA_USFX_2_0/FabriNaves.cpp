@@ -2,38 +2,32 @@
 
 
 #include "FabriNaves.h"
+#include "NaveEnemigaArea.h"
 
-
-
-// Sets default values
 AFabriNaves::AFabriNaves()
 {
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+		PrimaryActorTick.bCanEverTick = true;
 }
 
-// Called when the game starts or when spawned
 void AFabriNaves::BeginPlay()
 {
 	Super::BeginPlay();
-
 }
 
-
-// Called every frame
 void AFabriNaves::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
+		Super::Tick(DeltaTime);
 }
 
-
-ANaveEnemiga* AFabriNaves::OrdenarNaveEnemiga(FString Categoria)
+ANaveEnemiga* AFabriNaves::OrdenarNaveEnemiga(FString NombreNave, UWorld* World, FVector Posicion, FRotator Rotacion)
 {
-	ANaveEnemiga* NaveEnemiga = CrearNaveEnemiga(Categoria);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Creando Nave Enemiga"));
-
-	return NaveEnemiga;
+	FVector PosicionNave = Posicion;
+	if (NombreNave == "Nave Enemiga Area") {
+	
+		ANaveEnemigaArea* NaveEnemigaArea = World->SpawnActor<ANaveEnemigaArea>(PosicionNave, Rotacion);
+		return NaveEnemigaArea;
+	
+	}
+	
+	return nullptr;
 }
-
