@@ -29,9 +29,15 @@ public:
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	/** Returns ProjectileMesh subobject **/
+	// Devuelve el mesh del proyectil
 	FORCEINLINE UStaticMeshComponent* GetProjectileMesh() const { return ProjectileMesh; }
-	/** Returns ProjectileMovement subobject **/
+	// Devuelve el componente de movimiento del proyectil
 	FORCEINLINE UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
+
+public:
+
+	void SetProjectileVelocity(const FVector& NewVelocity);
+	void SetProjectileScale(const FVector& NewScale);
+
 };
 

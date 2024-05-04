@@ -33,6 +33,7 @@ public:
 	void virtual Construir_Escudo();
 	void virtual Construir_Propulsores();
 	void virtual Construir_Arma();
+	void virtual Construir_Movimiento() override;
 	virtual  ANaveKelly* GetNave();
 
 };

@@ -4,8 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
+#include "GALAGA_USFX_2_0Projectile.h"
+#include "ProyectilNaveEnemiga.h"
 #include "NaveEnemigaArea.generated.h"
-
 /**
  * 
  */
@@ -17,10 +18,20 @@ public:
 	ANaveEnemigaArea();	
 	FString NombreNave;	
 public:
+	virtual void Mover(float DeltaTime);
 	virtual void Tick(float DeltaTime) override;
+
+	float RunningTime;
+	float Tiempo_Disparo;
+	float Tiempo_Disparo_Generar;
+	FVector Distancia_Disparo;
+	float SpeedScale;
+
 protected:
 
-	virtual void DisparoNave();
-
+	//virtual void DisparoNave();
+	//float TiempoEntreProyectil;
+	//float TiempoPrimerProyectil;
+	//float VelocidadProyectil;
 
 };

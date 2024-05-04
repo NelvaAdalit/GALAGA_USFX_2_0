@@ -53,6 +53,10 @@ void ANaveNodrizaMarkarean01::Construir_Arma()
 {
 }
 
+void ANaveNodrizaMarkarean01::Construir_Movimiento()
+{
+}
+
 ANaveKelly* ANaveNodrizaMarkarean01::GetNave()
 {
 	return nullptr;

@@ -26,4 +26,5 @@ public:
 	UPROPERTY (VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Propulsores;
 
+
 };

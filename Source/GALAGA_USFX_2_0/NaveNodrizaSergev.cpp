@@ -30,6 +30,7 @@ void ANaveNodrizaSergev::Construir_Caso()
 	FVector Poscicion = FVector(570.0f, 100.0f, 150.0f);
 	FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
 	ANaveNodrizaBase* Caso = GetWorld()->SpawnActor<ANaveNodrizaBase>(Caso->StaticClass(), Poscicion, Rotacion);
+
 }
 
 void ANaveNodrizaSergev::Construir_Escudo()
@@ -51,6 +52,11 @@ void ANaveNodrizaSergev::Construir_Arma()
 	FVector Poscicion = FVector(800.0f, 400.0f, 250.0f);
 	FRotator Rotacion = FRotator(00.0f, 180.0f, 00.0f);
 	AArmaNN* Arma = GetWorld()->SpawnActor<AArmaNN>(Arma->StaticClass(), Poscicion, Rotacion);
+
+}
+
+void ANaveNodrizaSergev::Construir_Movimiento()
+{
 }
 
 ANaveKelly* ANaveNodrizaSergev::GetNave()

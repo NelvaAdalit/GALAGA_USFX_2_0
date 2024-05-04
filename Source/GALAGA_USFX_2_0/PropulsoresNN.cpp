@@ -15,7 +15,7 @@ APropulsoresNN::APropulsoresNN()
 	RootComponent = Propulsores;//static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Meshes/Nodriza2.Nodriza2'"));
 
 	SetActorRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
-
+	
 
 }
 

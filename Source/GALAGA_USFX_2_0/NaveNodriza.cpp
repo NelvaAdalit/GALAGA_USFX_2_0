@@ -2,7 +2,7 @@
 
 
 #include "NaveNodriza.h"
-#include "PropulsoresNN.h"
+#include "NaveALFAN1.h"
 #include "NaveNodrizaBase.h"
 
 // Sets default values
@@ -32,6 +32,7 @@ void ANaveNodriza::Construir_Caso()
 	FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
 	ANaveNodrizaBase* Caso = GetWorld()->SpawnActor<ANaveNodrizaBase>(Caso->StaticClass(), Poscicion, Rotacion);
 	//estructura de la anave  nodriza
+
 }
 
 void ANaveNodriza::Construir_Escudo()
@@ -39,14 +40,20 @@ void ANaveNodriza::Construir_Escudo()
 }
 
 void ANaveNodriza::Construir_Propulsores()
-{
-	FVector Poscicion =FVector  (800.0f, 300.0f, 150.0f);
-	FRotator Rotacion = FRotator(	00.0f, 180.0f, 00.0f);
-	APropulsoresNN* Propulsores = GetWorld()->SpawnActor<APropulsoresNN>(Propulsores->StaticClass(), Poscicion, Rotacion);
+{//nave hija 
+	FVector Poscicion =FVector  (900.0f, 700.0f, 150.0f);
+	FRotator Rotacion = FRotator(00.0f, 180.0f, 00.0f);
+	ANaveALFAN1* Propulsores  = GetWorld()->SpawnActor<ANaveALFAN1>(Propulsores->StaticClass(), Poscicion, Rotacion);
 }
 
 void ANaveNodriza::Construir_Arma()
 {
+	//clase disparadora 
+}
+
+void ANaveNodriza::Construir_Movimiento()
+{
+	//UMovimientoNN* Movimiento = NewObject<UMovimientoNN>();
 }
 
 ANaveKelly* ANaveNodriza::GetNave()
@@ -56,6 +63,7 @@ ANaveKelly* ANaveNodriza::GetNave()
 
 
 
+//mover,vida
 
 
 

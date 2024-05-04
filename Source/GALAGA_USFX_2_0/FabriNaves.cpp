@@ -3,7 +3,7 @@
 
 #include "FabriNaves.h"
 #include "NaveEnemigaArea.h"
-
+#include "NaveEnemigaEspia.h"
 AFabriNaves::AFabriNaves()
 {
 		PrimaryActorTick.bCanEverTick = true;
@@ -28,6 +28,12 @@ ANaveEnemiga* AFabriNaves::OrdenarNaveEnemiga(FString NombreNave, UWorld* World,
 		return NaveEnemigaArea;
 	
 	}
+	FVector PosicionNaveEspia = Posicion;
+	if (NombreNave == "Nave Enemiga Espia") {
+		ANaveEnemigaEspia* NaveEnemigaEspias = World->SpawnActor<ANaveEnemigaEspia>(PosicionNaveEspia, Rotacion);
 	
+	
+	
+	}
 	return nullptr;
 }

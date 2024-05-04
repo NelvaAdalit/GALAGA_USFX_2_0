@@ -6,8 +6,10 @@
 #include "GameFramework/GameModeBase.h"
 #include "DirectorDeNaveNodriza.h"
 #include "GALAGA_USFX_2_0GameMode.generated.h"
-	
-//class ANaveEnemigaArea;	
+
+class ANaveEnemiga;
+class ANaveEnemigaArea;
+class ANaveEnemigaEspia;
 UCLASS(MinimalAPI)
 class AGALAGA_USFX_2_0GameMode : public AGameModeBase
 {
@@ -23,6 +25,13 @@ protected:
 	virtual void BeginPlay() override;	
 public:
 	virtual void Tick(float DeltaTime) override;	
+public:
+
+	TArray<ANaveEnemiga*> TANavesEnemigas;
+	//TArray<ANaveEnemigaArea*> TANavesEnemigasAereas;
+	TArray<ANaveEnemigaEspia*> TANavesEnemigasEspia;
+
+	
 };
 
 

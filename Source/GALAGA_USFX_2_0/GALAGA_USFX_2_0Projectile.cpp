@@ -6,6 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Engine/StaticMesh.h"
+//#include "NaveEnemiga.h"
 
 AGALAGA_USFX_2_0Projectile::AGALAGA_USFX_2_0Projectile() 
 {
@@ -42,4 +43,19 @@ void AGALAGA_USFX_2_0Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* Oth
 	}
 
 	Destroy();
+}
+void AGALAGA_USFX_2_0Projectile::SetProjectileVelocity(const FVector& NewVelocity)
+{
+	if (ProjectileMovement)
+	{
+		ProjectileMovement->Velocity = NewVelocity;
+	}
+}
+
+void AGALAGA_USFX_2_0Projectile::SetProjectileScale(const FVector& NewScale)
+{
+	if (ProjectileMesh)
+	{
+		ProjectileMesh->SetWorldScale3D(NewScale);
+	}
 }
