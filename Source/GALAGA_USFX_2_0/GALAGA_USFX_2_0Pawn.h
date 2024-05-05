@@ -41,8 +41,7 @@ public:
 	/** Sound to play each time we fire */
 	UPROPERTY(Category = Audio, EditAnywhere, BlueprintReadWrite)
 	class USoundBase* FireSound;
-
-	// Begin Actor Interface
+	
 	virtual void Tick(float DeltaSeconds) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End Actor Interface
@@ -74,5 +73,33 @@ public:
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+protected:
+	int ContImpacto;
+public:
+	void recibirImpacto();
+	void CheckDestroy();
+	int VidasRestantes = 3;
+
+	int GetVidasRestantes() const { return VidasRestantes; }
+	void AumentarVida()
+	{
+		if (VidasRestantes > 0)
+			VidasRestantes++;
+	}
+	// Función para reducir una vida del pawn
+	void ReducirVida()
+	{
+		if (VidasRestantes > 0)
+			VidasRestantes--;
+	}
+	void Jump();
+	//void Teleport();
+	FVector posicionInicial;
+	void Energia();
+	FTimerHandle TimerHandle_Energia;
+
+	virtual void BeginPlay() override;
+
 };
+
 

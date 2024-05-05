@@ -31,8 +31,10 @@ public:
 	float Tiempo_Disparo_Generar;
 	FVector Distancia_Disparo;
 
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* MallaAlfa;
+
+
+
 
 };

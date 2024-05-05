@@ -9,20 +9,29 @@
 ANaveNodriza::ANaveNodriza()
 {
 
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	//Movimiento = CreateDefaultSubobject<UMovimientoNN>(TEXT("Movimiento"));
+	vida =2 ;
 }
 
 void ANaveNodriza::BeginPlay()
 {
 
-	
+	Super::BeginPlay();
 }
 
 void ANaveNodriza::Tick(float DeltaTime)
 {
+	Super::Tick(DeltaTime);
 
+	vida++;
+	if (vida % 40 == 0)
+	{
+
+		Construir_PatrullaEnigmaNN();
+
+	}
 
 }
 
@@ -37,13 +46,15 @@ void ANaveNodriza::Construir_Caso()
 
 void ANaveNodriza::Construir_Escudo()
 {
+	FVector Poscicion = FVector(800.0f, 100.0f, 250.0f);
+	FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
+	AEscudoNN* Escudo = GetWorld()->SpawnActor<AEscudoNN>(Escudo->StaticClass(), Poscicion, Rotacion);
 }
 
-void ANaveNodriza::Construir_Propulsores()
-{//nave hija 
-	FVector Poscicion =FVector  (900.0f, 700.0f, 150.0f);
-	FRotator Rotacion = FRotator(00.0f, 180.0f, 00.0f);
-	ANaveALFAN1* Propulsores  = GetWorld()->SpawnActor<ANaveALFAN1>(Propulsores->StaticClass(), Poscicion, Rotacion);
+void ANaveNodriza::Construir_PatrullaEnigmaNN()
+{
+	//patrulla
+
 }
 
 void ANaveNodriza::Construir_Arma()
@@ -51,10 +62,6 @@ void ANaveNodriza::Construir_Arma()
 	//clase disparadora 
 }
 
-void ANaveNodriza::Construir_Movimiento()
-{
-	//UMovimientoNN* Movimiento = NewObject<UMovimientoNN>();
-}
 
 ANaveKelly* ANaveNodriza::GetNave()
 {
@@ -62,11 +69,5 @@ ANaveKelly* ANaveNodriza::GetNave()
 }
 
 
-
-//mover,vida
-
-
-
-// Called when the game starts or when spawned
 
 

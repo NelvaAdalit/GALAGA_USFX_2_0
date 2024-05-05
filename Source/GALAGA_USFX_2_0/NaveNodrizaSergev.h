@@ -8,7 +8,7 @@
 #include "NaveKelly.h"
 #include "CascoNN.h"
 #include "EscudoNN.h"
-#include "PropulsoresNN.h"
+#include "PatrullaEnigmaNN.h"
 #include "ArmaNN.h"
 #include "NaveNodrizaBase.h"
 #include "NaveNodrizaSergev.generated.h"
@@ -28,12 +28,12 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	int vida;
 public:
 	virtual void Construir_Caso();
 	void virtual Construir_Escudo();
-	void virtual Construir_Propulsores();
+	void virtual Construir_PatrullaEnigmaNN();
 	void virtual Construir_Arma();
-	void virtual Construir_Movimiento() override;
 	virtual  ANaveKelly* GetNave();
 
 };

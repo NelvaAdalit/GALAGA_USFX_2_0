@@ -2,10 +2,6 @@
 
 #include "NaveEnemiga.h"
 #include "NaveEnemigaEspia.h"
-//#include "Components/StaticMeshComponent.h"
-//#include "UObject/ConstructorHelpers.h"
-//#include "Engine/StaticMesh.h"
-////#include "GALAGA_USFX_2_0Projectile.h"
 
 
 ANaveEnemiga::ANaveEnemiga()
@@ -17,29 +13,13 @@ ANaveEnemiga::ANaveEnemiga()
 	mallaNaveEnemiga->SetupAttachment(RootComponent);
 	//ShipMeshComponent->SetStaticMesh(ShipMesh.Object);
 	RootComponent = mallaNaveEnemiga;
+	movimiento = true;
+	velocidadY = 10;
+	VelocidadMovimiento = 500.0f;
 
-	Speed = 250.0f;
-	LimiteInferior = -1800.0f;
-	FireRate = 1.5f;
+	MovimientoNN = CreateDefaultSubobject<UMovimientoNN>(TEXT("MovimientoNN"));
 
-	//SetActorRotation(FRotator(0.0f, 180.0f, 0.0f));
-
-	//SetActorRelativeScale3D(FVector(1.5f, 1.5f, 1.5f));
-
-
-	////Speed = 250.0f;
-	//LimiteInferior = -1800.0f;
-
- 
-
-
-	
-
-			
 }
-
-
-
 
 void ANaveEnemiga::BeginPlay()
 {
@@ -48,21 +28,30 @@ void ANaveEnemiga::BeginPlay()
 void ANaveEnemiga::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	/*if (ubicacionActual.X > LimiteSuperior) {
-		SetActorLocation(FVector(0.0f, ubicacionActual.Y, ubicacionActual.Z));
+    // Move the actor based on its velocity
+    FVector NewLocation = GetActorLocation() + GetActorForwardVector() * VelocidadMovimiento * DeltaTime;
 
+    // Check if the new location is within the bounds
+    if (NewLocation.X < LimiteIzquierdo)
+    {
+        NewLocation.X = LimiteDerecho;
+    }
+    else if (NewLocation.X > LimiteDerecho)
+    {
+        NewLocation.X = LimiteIzquierdo;
+    }
 
-	}
-	if (ubicacionActual.X < Limiteinferior) {
-		SetActorLocation(FVector(1530.0f, ubicacionActual.Y, ubicacionActual.Z));
-	}
+    if (NewLocation.Y < Limiteinferior)
+    {
+        NewLocation.Y = LimiteSuperior;
+    }
+    else if (NewLocation.Y > LimiteSuperior)
+    {
+        NewLocation.Y = Limiteinferior;
+    }
 
-	if (ubicacionActual.Y > LimiteDerecho) {
-		SetActorLocation(FVector(ubicacionActual.X, 0.0f, ubicacionActual.Z));
-	}
-	if (ubicacionActual.Y < LimiteIzquierdo) {
-		SetActorLocation(FVector(ubicacionActual.X, 100.0f, ubicacionActual.Z));
-	}*/
+    SetActorLocation(NewLocation);
+
 }
 
 

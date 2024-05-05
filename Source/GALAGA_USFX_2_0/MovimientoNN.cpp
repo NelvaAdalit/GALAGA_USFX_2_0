@@ -11,7 +11,7 @@ UMovimientoNN::UMovimientoNN()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	
-	MovimientoSig = 5;
+	MovimientoSig = 4;
 	bMovimientoDerecha = true;
 	bMovimientoArriba = true;
 
@@ -36,7 +36,8 @@ void UMovimientoNN::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 		auto NuevaPosicion = Parent->GetActorLocation() + FVector(bMovimientoDerecha ? MovimientoSig : -MovimientoSig,
 			bMovimientoArriba ? MovimientoSig : -MovimientoSig, 0.0f);
 		Parent->SetActorLocation(NuevaPosicion);
-		if (bMovimientoDerecha && GetOwner()->GetActorLocation().X >= 1000.0f)
+
+		if (bMovimientoDerecha && GetOwner()->GetActorLocation().X >= 1800.0f)
 		{
 			bMovimientoDerecha = false;
 		}
@@ -46,7 +47,7 @@ void UMovimientoNN::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 		}
 
 
-		if (bMovimientoArriba && GetOwner()->GetActorLocation().Y >= 1000.0f)
+		if (bMovimientoArriba && GetOwner()->GetActorLocation().Y >= 1600.0f)
 		{
 			bMovimientoArriba = false;
 		}

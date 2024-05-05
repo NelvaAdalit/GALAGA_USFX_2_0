@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MovimientoNN.h"
 #include "NaveEnemiga.generated.h"
 
 UCLASS(ABSTRACT)
@@ -65,29 +66,27 @@ protected:
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	/*FVector ubicacionActual;
-	float Limiteinferior ;*/
-	/*float LimiteSuperior = 1550;
-	float LimiteIzquierdo = -1270.0;
-	float LimiteDerecho = 1520;*/
-	//FVector posicion;
 
 public:
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	UMovimientoNN* MovimientoNN;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = mallaNaveEnemiga, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* mallaNaveEnemiga;
 
 public:
 
-	//float Tiempo_Disparo;
-	//float Tiempo_Disparo_Generar;
-	//FVector Distancia_Disparo;
-
 	void Disparar() PURE_VIRTUAL(ANaveEnemiga::Disparar, );
-	/*void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover, );*/
-	
+	void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover, );
+	bool movimiento;
+	float velocidadY;
+	FVector PosicionInicial;
+	int  VelocidadMovimiento;
 
+	float Limiteinferior = -1680;
+	float LimiteSuperior = 1800;
+	float LimiteIzquierdo = -1610;
+	float LimiteDerecho = 1600;
 };

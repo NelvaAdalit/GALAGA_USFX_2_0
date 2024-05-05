@@ -12,6 +12,10 @@
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "GameFramework/PlayerInput.h"
+#include "Components/InputComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
+
 
 const FName AGALAGA_USFX_2_0Pawn::MoveForwardBinding("MoveForward");
 const FName AGALAGA_USFX_2_0Pawn::MoveRightBinding("MoveRight");
@@ -48,8 +52,12 @@ AGALAGA_USFX_2_0Pawn::AGALAGA_USFX_2_0Pawn()
 	MoveSpeed = 1000.0f;
 	// Weapon
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.1f;
+	FireRate = 0.2f;
 	bCanFire = true;
+	ContImpacto = 0;
+	SetActorLocation(FVector(-885.0f, -122.0f, 200.0f));// posicion inicial del jugador  
+	posicionInicial = GetActorLocation();
+
 }
 
 void AGALAGA_USFX_2_0Pawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -135,5 +143,40 @@ void AGALAGA_USFX_2_0Pawn::FireShot(FVector FireDirection)
 void AGALAGA_USFX_2_0Pawn::ShotTimerExpired()
 {
 	bCanFire = true;
+}
+
+void AGALAGA_USFX_2_0Pawn::recibirImpacto()
+{
+	ContImpacto++;
+
+	// Verificar si el pawn debe ser destruido
+	CheckDestroy();
+}
+
+void AGALAGA_USFX_2_0Pawn::CheckDestroy()
+{
+	if (ContImpacto == 3)
+	{
+		FString Message = FString::Printf(TEXT("GAME OVER"));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Purple, Message);
+
+		Destroy();
+
+	}
+}
+
+void AGALAGA_USFX_2_0Pawn::Jump()
+{
+}
+
+void AGALAGA_USFX_2_0Pawn::Energia()
+{
+	MoveSpeed = 2000.0f;
+	//GetWorldTimerManager().SetT
+}
+
+void AGALAGA_USFX_2_0Pawn::BeginPlay()
+{
+	Super::BeginPlay();
 }
 

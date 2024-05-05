@@ -29,7 +29,7 @@ ANaveKelly* ADirectorDeNaveNodriza::NaveNodriza(IBuilderNaveNodriza* Nave)
 {
 	if (Nave) {
 		Nave->Construir_Arma();
-		Nave->Construir_Propulsores();
+		Nave->Construir_PatrullaEnigmaNN();
 		Nave->Construir_Escudo();
 		Nave->Construir_Caso();
 		return Nave->GetNave();
@@ -43,7 +43,7 @@ ANaveKelly* ADirectorDeNaveNodriza::NaveNodrizaMarkarean01(IBuilderNaveNodriza* 
 {
 	if (Nave) {
 		Nave->Construir_Arma();
-		Nave->Construir_Propulsores();
+		Nave->Construir_PatrullaEnigmaNN();
 		Nave->Construir_Escudo();
 		Nave->Construir_Caso();
 		return Nave->GetNave();
@@ -55,7 +55,7 @@ ANaveKelly* ADirectorDeNaveNodriza::NaveNodrizaSergev(IBuilderNaveNodriza* Nave)
 {
 	if (Nave) {
 		Nave->Construir_Arma();
-		Nave->Construir_Propulsores();
+		Nave->Construir_PatrullaEnigmaNN();
 		Nave->Construir_Escudo();
 		Nave->Construir_Caso();
 		return Nave->GetNave();

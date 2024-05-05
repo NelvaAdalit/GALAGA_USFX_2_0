@@ -25,5 +25,12 @@ public:
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Escudo;
+	FVector PosicionInicial;
+	int  VelocidadMovimiento;
+
+	float Limiteinferior = -780;
+	float LimiteSuperior =700;
+	float LimiteIzquierdo = -710;
+	float LimiteDerecho = 700;
 
 };

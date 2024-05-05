@@ -22,6 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeProyectilNaveEnemiga() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AProyectilNaveEnemiga::execOnHit)
 	{
@@ -127,9 +129,17 @@ void EmptyLinkFunctionForGeneratedCodeProyectilNaveEnemiga() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProyectilBase_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mallaProyectil_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProyectilBase;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mallaProyectil;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovement_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovement;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireSound;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -148,16 +158,34 @@ void EmptyLinkFunctionForGeneratedCodeProyectilNaveEnemiga() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProyectilBase_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_mallaProyectil_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
-		{ "Category", "ProyectilBase" },
+		{ "Category", "Projectile" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "ProyectilNaveEnemiga.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProyectilBase = { "ProyectilBase", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProyectilNaveEnemiga, ProyectilBase), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProyectilBase_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProyectilBase_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_mallaProyectil = { "mallaProyectil", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProyectilNaveEnemiga, mallaProyectil), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_mallaProyectil_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_mallaProyectil_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProjectileMovement_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Movement" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ProyectilNaveEnemiga.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProjectileMovement = { "ProjectileMovement", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProyectilNaveEnemiga, ProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProjectileMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProjectileMovement_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_FireSound_MetaData[] = {
+		{ "Category", "Audio" },
+		{ "ModuleRelativePath", "ProyectilNaveEnemiga.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_FireSound = { "FireSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProyectilNaveEnemiga, FireSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_FireSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_FireSound_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProyectilNaveEnemiga_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProyectilBase,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_mallaProyectil,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_ProjectileMovement,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProyectilNaveEnemiga_Statics::NewProp_FireSound,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProyectilNaveEnemiga_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProyectilNaveEnemiga>::IsAbstract,
@@ -186,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeProyectilNaveEnemiga() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProyectilNaveEnemiga, 3439386483);
+	IMPLEMENT_CLASS(AProyectilNaveEnemiga, 2939428479);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<AProyectilNaveEnemiga>()
 	{
 		return AProyectilNaveEnemiga::StaticClass();

@@ -5,6 +5,7 @@
 #include "NaveEnemiga.h"	
 #include "NaveEnemigaArea.h"
 #include "NaveEnemigaEspia.h"
+#include "NaveCombate.h"
 #include "FabriNaves.h"
 #include "NaveNodrizaBase.h"
 #include "BuilderNaveNodriza.h"
@@ -38,15 +39,20 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 		for (int i = 0; i < 5; i++)
 		{
 			//ColocacionActual = FVector(ColocacionActual.X+250, ColocacionActual.Y + i , ColocacionActual.Z);
-			ANaveEnemiga* NewAerea = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Area", World, FVector(0.0f, 200.0f * i, 160.0f), FRotator::ZeroRotator);
+			ANaveEnemiga* NewAerea = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Area", World, FVector(1780.0f, 200.0f * i, 160.0f), FRotator::ZeroRotator);
+			
 			//TANavesEnemigas.Add(NewAerea);
 		}
 		
-		for (int z = 0; z < 6; z++) {
+		for (int z = 0; z < 12; z++) {
 
 		         ANaveEnemiga*NuevasNaveEnemigaEspia=AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Espia",World,FVector(1780.0f,-100.0*z,200.0f), FRotator::ZeroRotator);
-		         TANavesEnemigas.Push(NuevasNaveEnemigaEspia);
+		        // TANavesEnemigas.Push(NuevasNaveEnemigaEspia);
 		
+		}
+		for (int j = 0; j < 7; j++) {
+			ANaveEnemiga*NuevasNaveEnemigaCombate = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Combate", World, FVector(1800.0f, -100.0f * j, 160.0f), FRotator::ZeroRotator);
+			//TANavesEnemigas.Push(NuevasNaveEnemigaCombate);
 		}
 	}
 
@@ -58,7 +64,8 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>();//esto no se hace otro
 	IBuilderNaveNodriza*ContruirNaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>();
 	ANaveKelly* KellyNave = Director->NaveNodriza(ContruirNaveNodriza);
-	IBuilderNaveNodriza*ConstruirNaveNodrizaMarkarean01=GetWorld()->SpawnActor<ANaveNodrizaMarkarean01>();
+
+	IBuilderNaveNodriza* ConstruirNaveNodrizaMarkarean01 = GetWorld()->SpawnActor<ANaveNodrizaMarkarean01>();
 	ANaveKelly* KellyNaveMarkarean01 = Director->NaveNodrizaMarkarean01(ConstruirNaveNodrizaMarkarean01);
 	IBuilderNaveNodriza*ConstruirNaveNodrizaSergev=GetWorld()->SpawnActor<ANaveNodrizaSergev>();
 	ANaveKelly* KellyNaveSergev = Director->NaveNodrizaSergev(ConstruirNaveNodrizaSergev);

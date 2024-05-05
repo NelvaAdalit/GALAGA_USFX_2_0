@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA_USFX_2_0.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8D2AAB40-0B7B-43BF-A5BD-CA1DED266803}</UniqueIdentifier>
+      <UniqueIdentifier>{AFCFF488-10CB-4654-A950-66814D9D2793}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6DD59A8D-51FC-4DFE-9332-4383C12A4D46}</UniqueIdentifier>
+      <UniqueIdentifier>{EA16FC00-287E-4F08-80BC-BA9E56D941CE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,12 +32,24 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA_USFX_2_0">
-      <UniqueIdentifier>{1C229116-CF3D-4CA8-91F9-D2A5E8570486}</UniqueIdentifier>
+      <UniqueIdentifier>{F77B1A53-0D63-454C-B1ED-A2266613B4F3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ArmaNN.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\ArmaNN.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\BatallonAereo.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\BatallonAereo.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\BatallonInterfaz.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\BatallonInterfaz.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\BuilderNaveNodriza.cpp">
@@ -97,6 +109,12 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\GALAGA_USFX_2_0Projectile.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\GestorNaves.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\GestorNaves.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\MovimientoNN.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
@@ -107,6 +125,24 @@
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveALFAN1.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveCombate.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveCombate.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveCombate1.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveCombate1.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveCombate2.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveCombate2.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveEnemiga.cpp">
@@ -157,10 +193,10 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaSergev.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\PropulsoresNN.cpp">
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\PatrullaEnigmaNN.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\PropulsoresNN.h">
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\PatrullaEnigmaNN.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ProyectilNaveEnemiga.cpp">

@@ -27,9 +27,8 @@ public:
 	//primera interfaz
 	virtual void Construir_Caso() = 0;
 	void virtual Construir_Escudo() = 0;
-	void virtual Construir_Propulsores() = 0;
+	void virtual Construir_PatrullaEnigmaNN() = 0;
 	void virtual Construir_Arma() = 0;
-	void virtual Construir_Movimiento() = 0;
 	virtual  ANaveKelly*GetNave() = 0;
 
 

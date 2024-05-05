@@ -25,4 +25,7 @@ public:
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* Arma;
+	int velocidad;
+
+	void Mover(float DeltaTime);
 };
