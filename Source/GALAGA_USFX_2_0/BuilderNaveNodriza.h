@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "NaveKelly.h"
+#include "NaveALFAN1.h"
 #include "BuilderNaveNodriza.generated.h"
 
 
@@ -16,7 +16,7 @@ class UBuilderNaveNodriza : public UInterface
 };
 
 /**
- * 
+ *
  */
 class GALAGA_USFX_2_0_API IBuilderNaveNodriza
 {
@@ -25,11 +25,16 @@ class GALAGA_USFX_2_0_API IBuilderNaveNodriza
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	//primera interfaz
-	virtual void Construir_Caso() = 0;
+
+
+	virtual void Construir_Casco() = 0;
 	void virtual Construir_Escudo() = 0;
 	void virtual Construir_PatrullaEnigmaNN() = 0;
 	void virtual Construir_Arma() = 0;
-	virtual  ANaveKelly*GetNave() = 0;
+	virtual class ANaveALFAN1* devolverNave() = 0;
+
+
+
 
 
 

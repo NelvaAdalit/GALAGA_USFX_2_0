@@ -10,7 +10,7 @@
 #include "PatrullaEnigmaNN.h"
 #include "ArmaNN.h"
 #include "MovimientoNN.h"
-#include "NaveKelly.h"
+#include "NaveALFAN1.h"
 #include "NaveNodriza.generated.h"
 
 UCLASS()
@@ -24,6 +24,8 @@ public:
 	//puntero a
 	int vida;
 
+	class ANaveALFAN1* NaveFinal;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -35,12 +37,15 @@ public:
 public:
 
 
-	virtual void Construir_Caso() override ;
+	virtual void Construir_Casco() override;
 	void virtual Construir_Escudo() override;
 	void virtual Construir_PatrullaEnigmaNN() override;
 	void virtual Construir_Arma() override;
-	virtual  ANaveKelly* GetNave() override;
+	 ANaveALFAN1* devolverNave();
+
 	
 private:
+protected:
+	int velocidad;
 	
 };

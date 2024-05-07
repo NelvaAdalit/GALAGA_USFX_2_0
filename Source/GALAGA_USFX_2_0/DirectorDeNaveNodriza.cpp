@@ -25,41 +25,35 @@ void ADirectorDeNaveNodriza::Tick(float DeltaTime)
 
 }
 
-ANaveKelly* ADirectorDeNaveNodriza::NaveNodriza(IBuilderNaveNodriza* Nave)
+void ADirectorDeNaveNodriza::ConstruirNAVENODRIZA(AActor* _naveNODRIZA)
 {
-	if (Nave) {
-		Nave->Construir_Arma();
-		Nave->Construir_PatrullaEnigmaNN();
-		Nave->Construir_Escudo();
-		Nave->Construir_Caso();
-		return Nave->GetNave();
-	
-	
-	}
-	return nullptr;
+	BuilderNaveNN = Cast<IBuilderNaveNodriza>(_naveNODRIZA);
 }
 
-ANaveKelly* ADirectorDeNaveNodriza::NaveNodrizaMarkarean01(IBuilderNaveNodriza* Nave)
+
+ANaveALFAN1* ADirectorDeNaveNodriza::devolverNave()
 {
-	if (Nave) {
-		Nave->Construir_Arma();
-		Nave->Construir_PatrullaEnigmaNN();
-		Nave->Construir_Escudo();
-		Nave->Construir_Caso();
-		return Nave->GetNave();
+
+	if (BuilderNaveNN) {
+
+		return BuilderNaveNN->devolverNave();
+
+
 	}
-	return nullptr;
+	else {
+		return nullptr;
+
+	}
+
 }
 
-ANaveKelly* ADirectorDeNaveNodriza::NaveNodrizaSergev(IBuilderNaveNodriza* Nave)
+void ADirectorDeNaveNodriza::establecerNavenodriza()
 {
-	if (Nave) {
-		Nave->Construir_Arma();
-		Nave->Construir_PatrullaEnigmaNN();
-		Nave->Construir_Escudo();
-		Nave->Construir_Caso();
-		return Nave->GetNave();
-	}
-	return nullptr;
+	BuilderNaveNN->Construir_Casco();
+	BuilderNaveNN->Construir_Escudo();
+	BuilderNaveNN->Construir_PatrullaEnigmaNN();
+	BuilderNaveNN->Construir_Arma();
 }
+
+	
 

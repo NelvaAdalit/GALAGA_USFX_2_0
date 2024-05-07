@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "NaveKelly.h"
+#include "NaveALFAN1.h"
 #include "BuilderNaveNodriza.h"
 #include "DirectorDeNaveNodriza.generated.h"
 UCLASS()
@@ -16,6 +16,9 @@ public:
 	// Sets default values for this actor's properties
 	ADirectorDeNaveNodriza();
 
+	IBuilderNaveNodriza* BuilderNaveNN;
+	
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -23,9 +26,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
-	ANaveKelly* NaveNodriza(IBuilderNaveNodriza*Nave);
-	ANaveKelly* NaveNodrizaMarkarean01(IBuilderNaveNodriza*Nave);
-	ANaveKelly*NaveNodrizaSergev(IBuilderNaveNodriza*Nave);
+public:
+	void ConstruirNAVENODRIZA(AActor*_naveNODRIZA);
+	void establecerNavenodriza();
+  class ANaveALFAN1* devolverNave() ;
 
 };

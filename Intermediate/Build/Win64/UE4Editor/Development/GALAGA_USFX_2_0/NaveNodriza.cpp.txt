@@ -1,9 +1,7 @@
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.GALAGA_USFX_2_0.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveNodriza.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\BuilderNaveNodriza.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveKelly.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveKelly.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BuilderNaveNodriza.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveALFAN1.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\CascoNN.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CascoNN.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\EscudoNN.h
@@ -14,8 +12,8 @@ D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\PatrullaEnigmaNN.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\ArmaNN.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\ArmaNN.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodriza.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveALFAN1.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveNodrizaInterfaz.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodrizaInterfaz.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveALFAN1.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveNodrizaBase.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodrizaBase.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BuilderNaveNodriza.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodriza.generated.h

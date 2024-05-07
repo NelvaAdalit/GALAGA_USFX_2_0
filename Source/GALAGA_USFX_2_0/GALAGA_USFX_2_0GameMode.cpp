@@ -10,8 +10,6 @@
 #include "NaveNodrizaBase.h"
 #include "BuilderNaveNodriza.h"
 #include "NaveNodriza.h"
-#include "NaveNodrizaMarkarean01.h"
-#include "NaveNodrizaSergev.h"
 #include "ProyectilNaveEnemiga.h"
 #include "GALAGA_USFX_2_0Projectile.h"
 
@@ -57,18 +55,45 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	}
 
 
-	
-	FVector PosicionInicialNvaesNodrizas = FVector(500.0f, 500.0f, 150.0f);
+	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ANaveNodriza::StaticClass());
+
+	Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>(ADirectorDeNaveNodriza::StaticClass());
+
+	Director->ConstruirNAVENODRIZA(NaveNodriza);
+	Director->establecerNavenodriza();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	///*
+	//FVector PosicionInicialNvaesNodrizas = FVector(500.0f, 500.0f, 150.0f);*/
+
+
+
 	/*ANaveNodrizaBase* NaveNodriza=World->SpawnActor<ANaveNodrizaBase>(PosicionInicialNvaesNodrizas, FRotator::ZeroRotator);*/
 
-	Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>();//esto no se hace otro
-	IBuilderNaveNodriza*ContruirNaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>();
-	ANaveKelly* KellyNave = Director->NaveNodriza(ContruirNaveNodriza);
+	//Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>();//esto no se hace otro
+	//IBuilderNaveNodriza*ContruirNaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>();
+	//ANaveKelly* KellyNave = Director->NaveNodriza(ContruirNaveNodriza);
 
-	IBuilderNaveNodriza* ConstruirNaveNodrizaMarkarean01 = GetWorld()->SpawnActor<ANaveNodrizaMarkarean01>();
-	ANaveKelly* KellyNaveMarkarean01 = Director->NaveNodrizaMarkarean01(ConstruirNaveNodrizaMarkarean01);
-	IBuilderNaveNodriza*ConstruirNaveNodrizaSergev=GetWorld()->SpawnActor<ANaveNodrizaSergev>();
-	ANaveKelly* KellyNaveSergev = Director->NaveNodrizaSergev(ConstruirNaveNodrizaSergev);
+	//IBuilderNaveNodriza* ConstruirNaveNodrizaMarkarean01 = GetWorld()->SpawnActor<ANaveNodrizaMarkarean01>();
+	//ANaveKelly* KellyNaveMarkarean01 = Director->NaveNodrizaMarkarean01(ConstruirNaveNodrizaMarkarean01);
+	//IBuilderNaveNodriza*ConstruirNaveNodrizaSergev=GetWorld()->SpawnActor<ANaveNodrizaSergev>();
+	//ANaveKelly* KellyNaveSergev = Director->NaveNodrizaSergev(ConstruirNaveNodrizaSergev);
 	
 
 	/*HACER ESTO: PARA OTRO TIPO DE NAVE NODRIZA/TENGO QUE HACER TRES CONCRETS 

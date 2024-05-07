@@ -15,7 +15,10 @@ ANaveNodrizaBase::ANaveNodrizaBase()
     SetActorRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 
     VelocidadMovimiento =1.0f;
+    
+
 }
+   
 
 // Called when the game starts or when spawned
 void ANaveNodrizaBase::BeginPlay()

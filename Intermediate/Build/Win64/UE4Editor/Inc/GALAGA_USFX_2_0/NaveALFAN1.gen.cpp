@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_GALAGA_USFX_2_0();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_UNaveNodrizaInterfaz_NoRegister();
 // End Cross Module References
 	void ANaveALFAN1::StaticRegisterNativesANaveALFAN1()
 	{
@@ -37,6 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MallaAlfa;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -62,6 +64,9 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANaveALFAN1_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveALFAN1_Statics::NewProp_MallaAlfa,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ANaveALFAN1_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UNaveNodrizaInterfaz_NoRegister, (int32)VTABLE_OFFSET(ANaveALFAN1, INaveNodrizaInterfaz), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANaveALFAN1_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANaveALFAN1>::IsAbstract,
 	};
@@ -72,11 +77,11 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_ANaveALFAN1_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_ANaveALFAN1_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ANaveALFAN1_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveALFAN1_Statics::Class_MetaDataParams))
 	};
@@ -89,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveALFAN1, 2443033255);
+	IMPLEMENT_CLASS(ANaveALFAN1, 3538639890);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ANaveALFAN1>()
 	{
 		return ANaveALFAN1::StaticClass();

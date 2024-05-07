@@ -1,9 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
 #include "NaveNodriza.h"
-#include "NaveALFAN1.h"
-#include "NaveNodrizaBase.h"
+
 
 // Sets default values
 ANaveNodriza::ANaveNodriza()
@@ -11,62 +13,56 @@ ANaveNodriza::ANaveNodriza()
 
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	//Movimiento = CreateDefaultSubobject<UMovimientoNN>(TEXT("Movimiento"));
-	vida =2 ;
+	velocidad = 100.0f;
 }
 
 void ANaveNodriza::BeginPlay()
 {
 
 	Super::BeginPlay();
+
+	NaveFinal = GetWorld()->SpawnActor<ANaveALFAN1>(ANaveALFAN1::StaticClass());
+	NaveFinal->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+
 }
 
 void ANaveNodriza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	vida++;
-	if (vida % 40 == 0)
-	{
-
-		Construir_PatrullaEnigmaNN();
-
-	}
-
+	
 }
 
-void ANaveNodriza::Construir_Caso()
+void ANaveNodriza::Construir_Casco()
 {
-	FVector Poscicion = FVector(570.0f, 100.0f, 150.0f);
-	FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
-	ANaveNodrizaBase* Caso = GetWorld()->SpawnActor<ANaveNodrizaBase>(Caso->StaticClass(), Poscicion, Rotacion);
-	//estructura de la anave  nodriza
+	NaveFinal->SetCasco(1);
 
 }
 
 void ANaveNodriza::Construir_Escudo()
 {
-	FVector Poscicion = FVector(800.0f, 100.0f, 250.0f);
-	FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
-	AEscudoNN* Escudo = GetWorld()->SpawnActor<AEscudoNN>(Escudo->StaticClass(), Poscicion, Rotacion);
+	NaveFinal ->SetEscudo(2);
 }
 
 void ANaveNodriza::Construir_PatrullaEnigmaNN()
 {
-	//patrulla
-
+		NaveFinal->SetPatrullaEnigma(3);
 }
 
 void ANaveNodriza::Construir_Arma()
 {
-	//clase disparadora 
+
+		NaveFinal->SetArma(1);
 }
 
-
-ANaveKelly* ANaveNodriza::GetNave()
+ANaveALFAN1* ANaveNodriza::devolverNave()
 {
-	return nullptr;
+	return NaveFinal;
 }
+
+
+
+
 
 
 

@@ -34,4 +34,5 @@ public:
 	float LimiteIzquierdo = -1610;
 	float LimiteDerecho = 1600;
 
+
 };

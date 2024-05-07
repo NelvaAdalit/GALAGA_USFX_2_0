@@ -19,7 +19,7 @@ public:
 	AGALAGA_USFX_2_0GameMode();
 private:
 	//TArray<ANaveEnemigaArea*> TANavesEnemigasAerea;
-	ADirectorDeNaveNodriza* Director;
+	//ADirectorDeNaveNodriza* Director;
 
 protected:
 	virtual void BeginPlay() override;	
@@ -30,6 +30,12 @@ public:
 	TArray<ANaveEnemiga*> TANavesEnemigas;
 	//TArray<ANaveEnemigaArea*> TANavesEnemigasAereas;
 	TArray<ANaveEnemigaEspia*> TANavesEnemigasEspia;
+private:
+
+	UPROPERTY(VisibleAnywhere, Category = "Main")
+	class ANaveNodriza* NaveNodriza;
+
+	class ADirectorDeNaveNodriza* Director;
 
 	
 };

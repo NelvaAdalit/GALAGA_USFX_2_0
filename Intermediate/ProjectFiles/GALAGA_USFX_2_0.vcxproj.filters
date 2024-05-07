@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA_USFX_2_0.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AFCFF488-10CB-4654-A950-66814D9D2793}</UniqueIdentifier>
+      <UniqueIdentifier>{D72F08F6-B2B5-4D8B-8581-A249D30DEEF0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{EA16FC00-287E-4F08-80BC-BA9E56D941CE}</UniqueIdentifier>
+      <UniqueIdentifier>{6410218B-977B-4321-BE44-33BF08B81622}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA_USFX_2_0">
-      <UniqueIdentifier>{F77B1A53-0D63-454C-B1ED-A2266613B4F3}</UniqueIdentifier>
+      <UniqueIdentifier>{B5B8A2AA-214F-477F-90B5-8D6085D0F1F8}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ArmaNN.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
@@ -181,16 +181,10 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaBase.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaMarkarean01.cpp">
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaInterfaz.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaMarkarean01.h">
-      <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaSergev.cpp">
-      <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaSergev.h">
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\NaveNodrizaInterfaz.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\PatrullaEnigmaNN.cpp">
