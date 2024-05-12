@@ -180,3 +180,20 @@ void AGALAGA_USFX_2_0Pawn::BeginPlay()
 	Super::BeginPlay();
 }
 
+void AGALAGA_USFX_2_0Pawn::SetBounceBall(AActor* _Adaptador)
+{
+	BounceBall=Cast<IIBounceBall>(_Adaptador);
+	if (!BounceBall) {
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, FString::Printf(TEXT("No se pudo castear")));
+		return;
+	
+	}
+
+}
+
+void AGALAGA_USFX_2_0Pawn::Lanzar()
+{
+	BounceBall->Lanzar();
+
+}
+

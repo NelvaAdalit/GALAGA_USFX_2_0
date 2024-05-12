@@ -15,6 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	ACascoNN();
 
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -22,5 +23,14 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* MeshNaveNodrizaBase;
+	FVector PosicionInicial;
+	int  VelocidadMovimiento;
 
+	float Limiteinferior = -1680;
+	float LimiteSuperior = 1800;
+	float LimiteIzquierdo = -1610;
+	float LimiteDerecho = 1600;
 };

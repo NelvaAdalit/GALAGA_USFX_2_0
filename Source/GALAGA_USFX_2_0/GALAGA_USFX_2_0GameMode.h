@@ -32,12 +32,16 @@ public:
 	TArray<ANaveEnemigaEspia*> TANavesEnemigasEspia;
 private:
 
-	UPROPERTY(VisibleAnywhere, Category = "Main")
-	class ANaveNodriza* NaveNodriza;
 
+	//UPROPERTY(VisibleAnywhere, Category = "Main")
+	class ANaveNodriza* NaveNodriza;
 	class ADirectorDeNaveNodriza* Director;
 
-	
+public:
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class AGALAGA_USFX_2_0Pawn* Jugador;
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class ABallAdapter* Adaptador;
 };
 
 

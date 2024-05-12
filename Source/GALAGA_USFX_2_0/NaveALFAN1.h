@@ -19,6 +19,7 @@ class GALAGA_USFX_2_0_API ANaveALFAN1 : public AActor,public INaveNodrizaInterfa
 public:	
 	// Sets default values for this actor's properties
 	ANaveALFAN1();
+
 	class ACascoNN* Estructura;
 	class AEscudoNN* Escudo;
 	class AArmaNN* Arma;
@@ -37,8 +38,8 @@ public:
 public:
 	
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* MallaAlfa;
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
+	//UStaticMeshComponent* MallaAlfa;
 
 	void SetCasco(int a) override;
     void SetEscudo(int d) override;

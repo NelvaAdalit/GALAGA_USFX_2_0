@@ -37,7 +37,7 @@ void UMovimientoNN::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 			bMovimientoArriba ? MovimientoSig : -MovimientoSig, 0.0f);
 		Parent->SetActorLocation(NuevaPosicion);
 
-		if (bMovimientoDerecha && GetOwner()->GetActorLocation().X >= 1800.0f)
+		if (bMovimientoDerecha && GetOwner()->GetActorLocation().X >= 900.0f)
 		{
 			bMovimientoDerecha = false;
 		}
@@ -47,7 +47,7 @@ void UMovimientoNN::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 		}
 
 
-		if (bMovimientoArriba && GetOwner()->GetActorLocation().Y >= 1600.0f)
+		if (bMovimientoArriba && GetOwner()->GetActorLocation().Y >= 1900.0f)
 		{
 			bMovimientoArriba = false;
 		}

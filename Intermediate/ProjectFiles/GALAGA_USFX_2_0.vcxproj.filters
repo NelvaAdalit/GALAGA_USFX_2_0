@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA_USFX_2_0.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D72F08F6-B2B5-4D8B-8581-A249D30DEEF0}</UniqueIdentifier>
+      <UniqueIdentifier>{281F3E6E-0EF0-4B2E-A535-9520B0C207ED}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6410218B-977B-4321-BE44-33BF08B81622}</UniqueIdentifier>
+      <UniqueIdentifier>{3057CF74-E733-4B60-B878-8B265C4BBC90}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,12 +32,30 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA_USFX_2_0">
-      <UniqueIdentifier>{B5B8A2AA-214F-477F-90B5-8D6085D0F1F8}</UniqueIdentifier>
+      <UniqueIdentifier>{61ADECD1-8ADC-4181-9F41-D8DC1C29D452}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\AdaptadorExtranjero.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\AdaptadorExtranjero.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ArmaNN.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\ArmaNN.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\Ball.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\Ball.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\BallAdapter.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\BallAdapter.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\BatallonAereo.cpp">
@@ -113,6 +131,12 @@
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\GestorNaves.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\IBounceBall.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\IBounceBall.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\MovimientoNN.cpp">

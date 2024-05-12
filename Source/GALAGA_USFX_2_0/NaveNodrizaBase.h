@@ -31,7 +31,7 @@ public:
 
 	float Limiteinferior = -1680;
 	float LimiteSuperior = 1800;
-	float LimiteIzquierdo = -1610;
+	float LimiteIzquierdo = -1910;
 	float LimiteDerecho = 1600;
 
 

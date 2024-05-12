@@ -41,23 +41,25 @@ void ANaveNodriza::Construir_Casco()
 
 void ANaveNodriza::Construir_Escudo()
 {
-	NaveFinal ->SetEscudo(2);
+	NaveFinal ->SetEscudo(4);
+
 }
 
 void ANaveNodriza::Construir_PatrullaEnigmaNN()
 {
-		NaveFinal->SetPatrullaEnigma(3);
+	NaveFinal->SetPatrullaEnigma(3);
 }
 
 void ANaveNodriza::Construir_Arma()
 {
 
-		NaveFinal->SetArma(1);
+	NaveFinal->SetArma(1);
 }
 
 ANaveALFAN1* ANaveNodriza::devolverNave()
 {
 	return NaveFinal;
+
 }
 
 

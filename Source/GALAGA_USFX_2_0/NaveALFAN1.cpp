@@ -32,14 +32,15 @@ void ANaveALFAN1::Tick(float DeltaTime)
 		SetPatrullaEnigma(avance);
 		SetArma(numero);
 
+
 	}
 }
 
 void ANaveALFAN1::SetCasco(int a)
-{
+{																																																																																									
 
 	for (int f=0; f<a; f++) {
-		FVector Poscicion = FVector(570.0f, 100.0f*f, 150.0f);
+		FVector Poscicion = FVector(800.0f, 100.0f*f, 250.0f);
 		FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
 		Estructura = GetWorld()->SpawnActor<ACascoNN>(ACascoNN::StaticClass(), Poscicion, Rotacion);
 	}
@@ -50,7 +51,7 @@ void ANaveALFAN1::SetCasco(int a)
 void ANaveALFAN1::SetEscudo(int d)
 {
 	for (int z = 0; z < d; z++) {
-		FVector Poscicion = FVector(570.0f, 100.0f*z, 150.0f);
+		FVector Poscicion = FVector(370.0f, 150.0f*z, 100.0f);
 		FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
 		 Escudo = GetWorld()->SpawnActor<AEscudoNN>(AEscudoNN::StaticClass(), Poscicion, Rotacion);
 	}
@@ -76,10 +77,10 @@ void ANaveALFAN1::SetArma(int l)
 	numero = l;
 
 
-	FVector Poscicion = FVector(800.0f,300.0f, 250.0f);
+	FVector Poscicion = FVector(780.0f,-400.0f, 250.0f);
 
 
-	for (int i = 0; i < 11; i++)
+	for (int i = 0; i < 9; i++)
 	{
 		FRotator Rotacion = FRotator(00.0f, 0.0f, 00.0f);
 		 Arma = GetWorld()->SpawnActor<AArmaNN>(AArmaNN::StaticClass(), Poscicion, Rotacion);

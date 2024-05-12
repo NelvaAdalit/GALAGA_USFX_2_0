@@ -41,7 +41,7 @@ public:
 	void virtual Construir_Escudo() override;
 	void virtual Construir_PatrullaEnigmaNN() override;
 	void virtual Construir_Arma() override;
-	 ANaveALFAN1* devolverNave();
+	ANaveALFAN1* devolverNave();
 
 	
 private:

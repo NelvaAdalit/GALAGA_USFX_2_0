@@ -28,9 +28,9 @@ public:
 	FVector PosicionInicial;
 	int  VelocidadMovimiento;
 
-	float Limiteinferior = -780;
-	float LimiteSuperior =700;
-	float LimiteIzquierdo = -710;
-	float LimiteDerecho = 700;
+	float Limiteinferior = -580;
+	float LimiteSuperior =300;
+	float LimiteIzquierdo =-710;
+	float LimiteDerecho = 400;
 
 };

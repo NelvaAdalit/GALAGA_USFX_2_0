@@ -30,6 +30,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\IBounceBall.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\IBounceBall.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\GALAGA_USFX_2_0Pawn.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveEnemiga.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemiga.generated.h
@@ -53,3 +55,14 @@ D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveNodrizaBase.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodrizaBase.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveNodriza.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodriza.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\BallAdapter.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BallAdapter.generated.h

@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "IBounceBall.h"
 #include "GALAGA_USFX_2_0Pawn.generated.h"
 
 UCLASS(Blueprintable)
-class AGALAGA_USFX_2_0Pawn : public APawn
+class AGALAGA_USFX_2_0Pawn : public APawn, public IIBounceBall
 {
 	GENERATED_BODY()
 
@@ -99,7 +100,11 @@ public:
 	FTimerHandle TimerHandle_Energia;
 
 	virtual void BeginPlay() override;
+public:
 
+	class IIBounceBall*BounceBall;
+	void SetBounceBall(AActor* _Adaptador);
+	void Lanzar() override;
 };
 
 

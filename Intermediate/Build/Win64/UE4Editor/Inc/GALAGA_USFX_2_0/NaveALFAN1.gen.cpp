@@ -17,7 +17,6 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_ANaveALFAN1();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_GALAGA_USFX_2_0();
-	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_UNaveNodrizaInterfaz_NoRegister();
 // End Cross Module References
 	void ANaveALFAN1::StaticRegisterNativesANaveALFAN1()
@@ -33,11 +32,6 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MallaAlfa_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MallaAlfa;
-		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -52,18 +46,6 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 		{ "ModuleRelativePath", "NaveALFAN1.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveALFAN1_Statics::NewProp_MallaAlfa_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Projectile" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "NaveALFAN1.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANaveALFAN1_Statics::NewProp_MallaAlfa = { "MallaAlfa", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANaveALFAN1, MallaAlfa), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ANaveALFAN1_Statics::NewProp_MallaAlfa_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveALFAN1_Statics::NewProp_MallaAlfa_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANaveALFAN1_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveALFAN1_Statics::NewProp_MallaAlfa,
-	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ANaveALFAN1_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UNaveNodrizaInterfaz_NoRegister, (int32)VTABLE_OFFSET(ANaveALFAN1, INaveNodrizaInterfaz), false },
 		};
@@ -76,11 +58,11 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		Z_Construct_UClass_ANaveALFAN1_Statics::PropPointers,
+		nullptr,
 		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		UE_ARRAY_COUNT(Z_Construct_UClass_ANaveALFAN1_Statics::PropPointers),
+		0,
 		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ANaveALFAN1_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveALFAN1_Statics::Class_MetaDataParams))
@@ -94,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveALFAN1() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveALFAN1, 3538639890);
+	IMPLEMENT_CLASS(ANaveALFAN1, 3022736960);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ANaveALFAN1>()
 	{
 		return ANaveALFAN1::StaticClass();

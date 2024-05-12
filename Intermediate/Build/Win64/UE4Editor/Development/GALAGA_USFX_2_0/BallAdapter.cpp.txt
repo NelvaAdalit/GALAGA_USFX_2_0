@@ -1,0 +1,7 @@
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.GALAGA_USFX_2_0.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\BallAdapter.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\IBounceBall.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\IBounceBall.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BallAdapter.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\Ball.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\Ball.generated.h

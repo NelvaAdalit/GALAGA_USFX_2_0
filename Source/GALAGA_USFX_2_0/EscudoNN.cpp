@@ -13,7 +13,7 @@ AEscudoNN::AEscudoNN()
 	Escudo->SetupAttachment(RootComponent);
 	Escudo->SetStaticMesh(ShipMesh.Object);
 	RootComponent = Escudo;//static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Meshes/Nodriza2.Nodriza2'"));
-    VelocidadMovimiento=100;
+   // VelocidadMovimiento=100;
 	SetActorRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
     SetActorRotation(FRotator(0.0f, 180.0f, 0.0f));
     

@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
+	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_UIBounceBall_NoRegister();
 // End Cross Module References
 	void AGALAGA_USFX_2_0Pawn::StaticRegisterNativesAGALAGA_USFX_2_0Pawn()
 	{
@@ -65,6 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireSound;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -159,6 +161,9 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_MoveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_FireSound,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UIBounceBall_NoRegister, (int32)VTABLE_OFFSET(AGALAGA_USFX_2_0Pawn, IIBounceBall), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AGALAGA_USFX_2_0Pawn>::IsAbstract,
 	};
@@ -169,11 +174,11 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x008000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::Class_MetaDataParams))
 	};
@@ -186,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGALAGA_USFX_2_0Pawn, 2905187668);
+	IMPLEMENT_CLASS(AGALAGA_USFX_2_0Pawn, 1390819747);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<AGALAGA_USFX_2_0Pawn>()
 	{
 		return AGALAGA_USFX_2_0Pawn::StaticClass();

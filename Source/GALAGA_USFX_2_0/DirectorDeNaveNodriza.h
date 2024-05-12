@@ -27,8 +27,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 public:
+
 	void ConstruirNAVENODRIZA(AActor*_naveNODRIZA);
 	void establecerNavenodriza();
-  class ANaveALFAN1* devolverNave() ;
+    class ANaveALFAN1* devolverNave() ;
+
 
 };
