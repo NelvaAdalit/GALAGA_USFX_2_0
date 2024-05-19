@@ -1,9 +1,0 @@
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.GALAGA_USFX_2_0.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveCombate1.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveCombate.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveEnemiga.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\MovimientoNN.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\MovimientoNN.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemiga.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveCombate.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveCombate1.generated.h

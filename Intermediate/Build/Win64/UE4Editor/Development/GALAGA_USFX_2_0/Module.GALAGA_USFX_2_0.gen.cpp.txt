@@ -1,0 +1,104 @@
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.GALAGA_USFX_2_0.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/AdaptadorExtranjero.gen.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/AdaptadorExtranjero.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\AdaptadorExtranjero.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/ArmaNN.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/ArmaNN.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\ArmaNN.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/Ball.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/Ball.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\Ball.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/BallAdapter.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/BallAdapter.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\IBounceBall.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\IBounceBall.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BallAdapter.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/BatallonAereo.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/BatallonAereo.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\BatallonInterfaz.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BatallonInterfaz.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BatallonAereo.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/BatallonInterfaz.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/BuilderNaveNodriza.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/BuilderNaveNodriza.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveALFAN1.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\CascoNN.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CascoNN.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\EscudoNN.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\EscudoNN.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\PatrullaEnigmaNN.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\MovimientoNN.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\MovimientoNN.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\PatrullaEnigmaNN.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveNodrizaInterfaz.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodrizaInterfaz.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveALFAN1.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\BuilderNaveNodriza.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CascoNN.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/DirectorDeNaveNodriza.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/DirectorDeNaveNodriza.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\DirectorDeNaveNodriza.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/EscudoNN.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/FabriNaves.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/FabriNaves.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveEnemiga.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemiga.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\FabriNaves.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/GALAGA_USFX_2_0GameMode.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/GALAGA_USFX_2_0GameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\FacadeCanon.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\ModeloCanon.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\ModeloCanon.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\FacadeCanon.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\GALAGA_USFX_2_0Pawn.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\GALAGA_USFX_2_0Pawn.generated.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\GALAGA_USFX_2_0GameMode.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/GALAGA_USFX_2_0Pawn.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/GALAGA_USFX_2_0Projectile.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/GALAGA_USFX_2_0Projectile.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\GALAGA_USFX_2_0Projectile.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/GestorNaves.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/GestorNaves.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\GestorNaves.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/IBounceBall.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/MovimientoNN.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveALFAN1.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveCombate.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveCombate.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveCombate.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveCombate1.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveCombate1.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveCombate1.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveCombate2.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveCombate2.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveCombate2.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveEnemiga.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveEnemigaArea.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveEnemigaArea.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemigaArea.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveEnemigaEspia.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveEnemigaEspia.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemigaEspia.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveKelly.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveKelly.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveKelly.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveNodriza.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveNodriza.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodriza.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveNodrizaBase.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveNodrizaBase.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveNodrizaBase.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveNodrizaInterfaz.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/PatrullaEnigmaNN.gen.cpp

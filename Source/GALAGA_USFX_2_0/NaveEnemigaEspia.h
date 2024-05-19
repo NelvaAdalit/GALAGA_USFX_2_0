@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
-#include "ProyectilNaveEnemiga.h"
 #include "NaveEnemigaEspia.generated.h"
 
 /**

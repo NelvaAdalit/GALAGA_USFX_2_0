@@ -3,6 +3,7 @@
 #include "GALAGA_USFX_2_0GameMode.h"
 #include "GALAGA_USFX_2_0Pawn.h"
 #include "NaveEnemiga.h"	
+#include "FacadeCanon.h"
 #include "NaveEnemigaArea.h"
 #include "NaveEnemigaEspia.h"
 #include "NaveCombate.h"
@@ -10,10 +11,10 @@
 #include "NaveNodrizaBase.h"
 #include "BuilderNaveNodriza.h"
 #include "NaveNodriza.h"
-#include "ProyectilNaveEnemiga.h"
 #include "GALAGA_USFX_2_0Projectile.h"
 #include "Kismet/GameplayStatics.h"
 #include "BallAdapter.h"
+
 
 
 AGALAGA_USFX_2_0GameMode::AGALAGA_USFX_2_0GameMode()
@@ -32,15 +33,9 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	Adaptador=GetWorld()->SpawnActor<ABallAdapter>(ABallAdapter::StaticClass(),FVector(0,0,0),FRotator::ZeroRotator);
 	Jugador->SetBounceBall(Adaptador);
 	Jugador->Lanzar();
-
-
-
-
-
-
-
-
-
+	FormacionCanones = GetWorld()->SpawnActor<AFacadeCanon>();
+	FormacionCanones->SpawnCanons(1);
+	FormacionCanones->IncreaseNivel();
 
 
 
@@ -81,59 +76,6 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	Director->ConstruirNAVENODRIZA(NaveNodriza);
 	Director->establecerNavenodriza();
 	ANaveALFAN1* naveAlfa = Director->devolverNave();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	///*
-	//FVector PosicionInicialNvaesNodrizas = FVector(500.0f, 500.0f, 150.0f);*/
-
-
-
-	/*ANaveNodrizaBase* NaveNodriza=World->SpawnActor<ANaveNodrizaBase>(PosicionInicialNvaesNodrizas, FRotator::ZeroRotator);*/
-
-	//Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>();//esto no se hace otro
-	//IBuilderNaveNodriza*ContruirNaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>();
-	//ANaveKelly* KellyNave = Director->NaveNodriza(ContruirNaveNodriza);
-
-	//IBuilderNaveNodriza* ConstruirNaveNodrizaMarkarean01 = GetWorld()->SpawnActor<ANaveNodrizaMarkarean01>();
-	//ANaveKelly* KellyNaveMarkarean01 = Director->NaveNodrizaMarkarean01(ConstruirNaveNodrizaMarkarean01);
-	//IBuilderNaveNodriza*ConstruirNaveNodrizaSergev=GetWorld()->SpawnActor<ANaveNodrizaSergev>();
-	//ANaveKelly* KellyNaveSergev = Director->NaveNodrizaSergev(ConstruirNaveNodrizaSergev);
-	
-
-	/*HACER ESTO: PARA OTRO TIPO DE NAVE NODRIZA/TENGO QUE HACER TRES CONCRETS 
-	IBuilderNaveNodriza*ContruirNaveNodriza2 = GetWorld()->SpawnActor<ANaveNodriza02>();
-	ANaveKelly* KellyNave2 = Director->NaveNodriza(ContruirNaveNodriza2);*/
-	///tengo que crear 
-	//si quiero otro constructor creo otra clase que implemente la interfaz IBuilderNaveNodriza 
-
-
-
-
-
-
-
-
-
 
 }
 

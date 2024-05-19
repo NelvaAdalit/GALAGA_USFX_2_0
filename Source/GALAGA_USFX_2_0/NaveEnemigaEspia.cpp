@@ -48,12 +48,7 @@ void ANaveEnemigaEspia::Disparar()
 	FVector SpawnLocation = GetActorLocation() + GetActorForwardVector() * +100 + FVector(0.0f, 0.0f, 0.0f);//distancia de disparo
 
 	// Spawnear el proyectil
-	AProyectilNaveEnemiga* NewProjectile = GetWorld()->SpawnActor<AProyectilNaveEnemiga>(AProyectilNaveEnemiga::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
+	//AProyectilNaveEnemiga* NewProjectile = GetWorld()->SpawnActor<AProyectilNaveEnemiga>(AProyectilNaveEnemiga::StaticClass(), SpawnLocation, FRotator::ZeroRotator);
 
-	if (NewProjectile)
-	{
-		// Modificar dirección y velocidad del proyectil según sea necesario
-		FVector SpawnDirection = FVector(-1.0f, 0.0f, 0.0f);
-		NewProjectile->FireInDirection(SpawnDirection);
-	}
+
 }

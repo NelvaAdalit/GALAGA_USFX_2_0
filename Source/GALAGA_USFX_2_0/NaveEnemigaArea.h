@@ -5,7 +5,6 @@
 #include "NaveEnemiga.h"
 #include "MovimientoNN.h"
 #include "GALAGA_USFX_2_0Projectile.h"
-#include "ProyectilNaveEnemiga.h"
 #include "NaveEnemigaArea.generated.h"
 /**
  * 

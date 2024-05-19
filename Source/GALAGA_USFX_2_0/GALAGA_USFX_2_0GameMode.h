@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "DirectorDeNaveNodriza.h"
+#include "FacadeCanon.h"
+#include "GALAGA_USFX_2_0Pawn.h"
 #include "GALAGA_USFX_2_0GameMode.generated.h"
 
 class ANaveEnemiga;
@@ -36,6 +38,8 @@ private:
 	//UPROPERTY(VisibleAnywhere, Category = "Main")
 	class ANaveNodriza* NaveNodriza;
 	class ADirectorDeNaveNodriza* Director;
+	AFacadeCanon* FormacionCanones;
+	
 
 public:
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
