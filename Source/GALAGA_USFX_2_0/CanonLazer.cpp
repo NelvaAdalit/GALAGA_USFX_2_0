@@ -10,9 +10,12 @@
 ACanonLazer::ACanonLazer()
 {
 		PrimaryActorTick.bCanEverTick = true;
+		static ConstructorHelpers::FObjectFinder<UStaticMesh> CanonMesh(TEXT("StaticMesh'/Game/Meshes/BulletAmmunition1.BulletAmmunition1'"));
+		meshCanion->SetStaticMesh(CanonMesh.Object);
 		MaxProjectile = 6;
 		NumberFired = 0;
 		bCanFire = true;
+		SetActorRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 }
 
 void ACanonLazer::Tick(float DeltaTime)

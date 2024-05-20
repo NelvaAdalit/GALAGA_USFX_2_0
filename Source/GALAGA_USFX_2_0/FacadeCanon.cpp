@@ -21,10 +21,10 @@ AFacadeCanon::AFacadeCanon()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	TopLeftCorner = FVector(-1000.f, -1000.f, 250.f);
-	TopRightCorner = FVector(1000.f, -1000.f, 250.f);
-	DownLeftCorner = FVector(-1000.f, 1000.f, 250.f);
-	DownRightCorner = FVector(1000.f, 1000.f, 250.f);
+	TopLeftCorner = FVector(-800.f, -800.f, 250.f);
+	TopRightCorner = FVector(-800.f, -100.f, 250.f);
+	DownLeftCorner = FVector(-800.f, 700.f, 250.f);
+	DownRightCorner = FVector(-800.f, 250.f, 250.f);
 	NivelInicial= 1;
 	IntervaloNivel = 0.5f;
 	MaxNivel = 3;

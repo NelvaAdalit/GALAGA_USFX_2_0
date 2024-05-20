@@ -10,9 +10,12 @@
 ACanonBomba::ACanonBomba()
 {
 		PrimaryActorTick.bCanEverTick = true;
+		static ConstructorHelpers::FObjectFinder<UStaticMesh> CanonMesh(TEXT("StaticMesh'/Game/Meshes/MissileAmmunition.MissileAmmunition'"));
+		meshCanion->SetStaticMesh(CanonMesh.Object);
 		MaxProjectile = 6;
 		NumberFired = 0;
 		bCanFire= true;
+		SetActorRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 	
 
 }

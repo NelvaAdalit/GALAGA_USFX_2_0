@@ -53,7 +53,7 @@ void ANaveNodriza::Construir_PatrullaEnigmaNN()
 void ANaveNodriza::Construir_Arma()
 {
 
-	NaveFinal->SetArma(1);
+	//NaveFinal->SetArma(1);
 }
 
 ANaveALFAN1* ANaveNodriza::devolverNave()

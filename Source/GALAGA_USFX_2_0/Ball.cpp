@@ -56,6 +56,7 @@ ABall::ABall()
 	ProjectileMovement->Velocity = FVector(1.0f, 1.0f, 0.0f);
 	ProjectileMovement->SetPlaneConstraintAxisSetting(EPlaneConstraintAxisSetting::Custom);
 	bCanCollide = true;
+	SetActorRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
 }
 
 void ABall::Launch()

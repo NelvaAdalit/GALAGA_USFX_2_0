@@ -15,13 +15,13 @@ AProyectil::AProyectil()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset(TEXT("StaticMesh'/Game/Meshes/BulletEnemyBounce.BulletEnemyBounce'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset(TEXT("StaticMesh'/Game/Meshes/Projectile.Projectile'"));
 	mallaProyectil= CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
 	mallaProyectil->SetStaticMesh(ProjectileMeshAsset.Object);
 	mallaProyectil->SetupAttachment(RootComponent);
-	velocidadDisparo=1000;
+	velocidadDisparo=-1000;
 	Disparodano=20;
-	mallaProyectil->SetRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
+	mallaProyectil->SetRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 }
 
 // Called when the game starts or when spawned

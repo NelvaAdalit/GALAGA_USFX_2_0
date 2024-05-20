@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA_USFX_2_0.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DC81217E-E5F9-40B2-B088-4AB05D122F98}</UniqueIdentifier>
+      <UniqueIdentifier>{1092EC81-E152-43B5-8807-9E0C009AE5C7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{274E273C-A0C2-49BC-8542-DFA051670EE6}</UniqueIdentifier>
+      <UniqueIdentifier>{3FF794D6-5B1B-468B-93D7-0912FF60B56F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA_USFX_2_0">
-      <UniqueIdentifier>{3E158453-7DE9-4F53-A19B-6DC0C5D43D4F}</UniqueIdentifier>
+      <UniqueIdentifier>{4E12AB7C-11A1-406D-A0F8-3A9C8B3B4019}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\AdaptadorExtranjero.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>

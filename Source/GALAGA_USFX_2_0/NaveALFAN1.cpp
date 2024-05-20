@@ -30,7 +30,7 @@ void ANaveALFAN1::Tick(float DeltaTime)
 	if (vida%100==0)
 	{
 		SetPatrullaEnigma(avance);
-		SetArma(numero);
+	//	SetArma(numero);
 
 
 	}
