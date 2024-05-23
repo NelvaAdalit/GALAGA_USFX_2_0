@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveCombate2() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveCombate2, 3899353141);
+	IMPLEMENT_CLASS(ANaveCombate2, 2966585618);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ANaveCombate2>()
 	{
 		return ANaveCombate2::StaticClass();

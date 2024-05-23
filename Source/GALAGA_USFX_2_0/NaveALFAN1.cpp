@@ -30,7 +30,7 @@ void ANaveALFAN1::Tick(float DeltaTime)
 	if (vida%100==0)
 	{
 		SetPatrullaEnigma(avance);
-	//	SetArma(numero);
+		SetArma(numero);
 
 
 	}
@@ -53,7 +53,7 @@ void ANaveALFAN1::SetEscudo(int d)
 	for (int z = 0; z < d; z++) {
 		FVector Poscicion = FVector(370.0f, 150.0f*z, 100.0f);
 		FRotator Rotacion = FRotator(0.0f, 0.0f, 0.0f);
-		 Escudo = GetWorld()->SpawnActor<AEscudoNN>(AEscudoNN::StaticClass(), Poscicion, Rotacion);
+		// Escudo = GetWorld()->SpawnActor<AEscudoNN>(AEscudoNN::StaticClass(), Poscicion, Rotacion);
 	}
 
 
@@ -87,6 +87,7 @@ void ANaveALFAN1::SetArma(int l)
 		Arma->SetActorLocation(Poscicion);
 		Poscicion.Y = Poscicion.Y + 100.0f;
 	}
+
 
 }
 

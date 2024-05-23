@@ -4,7 +4,7 @@
 #include "CanonLazer.h"
 #include"GALAGA_USFX_2_0Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
-#include "Proyectil.h"
+#include "proyectilLazer.h"
 #include "Kismet/GameplayStatics.h"
 
 ACanonLazer::ACanonLazer()
@@ -36,7 +36,7 @@ void ACanonLazer::Disparar()
 		{
 			FVector Location = GetActorLocation();
 			FRotator Rotation = GetActorRotation();
-			World->SpawnActor<AProyectil>(Location, Rotation);
+			World->SpawnActor<AproyectilLazer>(Location, Rotation);
 			NumberFired++;
 
 			// Establecer el temporizador para el próximo disparo

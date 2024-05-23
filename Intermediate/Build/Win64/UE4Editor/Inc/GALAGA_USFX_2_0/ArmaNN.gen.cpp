@@ -33,9 +33,9 @@ void EmptyLinkFunctionForGeneratedCodeArmaNN() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Arma_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mallaProyectil_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Arma;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mallaProyectil;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -51,16 +51,16 @@ void EmptyLinkFunctionForGeneratedCodeArmaNN() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AArmaNN_Statics::NewProp_Arma_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AArmaNN_Statics::NewProp_mallaProyectil_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Projectile" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "ArmaNN.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AArmaNN_Statics::NewProp_Arma = { "Arma", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AArmaNN, Arma), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AArmaNN_Statics::NewProp_Arma_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AArmaNN_Statics::NewProp_Arma_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AArmaNN_Statics::NewProp_mallaProyectil = { "mallaProyectil", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AArmaNN, mallaProyectil), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AArmaNN_Statics::NewProp_mallaProyectil_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AArmaNN_Statics::NewProp_mallaProyectil_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AArmaNN_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AArmaNN_Statics::NewProp_Arma,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AArmaNN_Statics::NewProp_mallaProyectil,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AArmaNN_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AArmaNN>::IsAbstract,
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeArmaNN() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AArmaNN, 2955816334);
+	IMPLEMENT_CLASS(AArmaNN, 3910426836);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<AArmaNN>()
 	{
 		return AArmaNN::StaticClass();

@@ -262,11 +262,8 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
-/FI"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\GALAGA_USFX_2_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\GALAGA_USFX_2_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\GALAGA_USFX_2_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
 "D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\CanonHielo.cpp"
-/FI"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.GALAGA_USFX_2_0.h"
+/FI"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.h"
 /Fo"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\CanonHielo.cpp.obj"
 /TP
 /GR-

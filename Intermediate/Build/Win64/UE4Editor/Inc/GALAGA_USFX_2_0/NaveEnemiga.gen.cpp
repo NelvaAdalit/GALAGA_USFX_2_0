@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveEnemiga_Statics::NewProp_mallaNaveEnemiga_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
-		{ "Category", "mallaNaveEnemiga" },
+		{ "Category", "Projectile" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "NaveEnemiga.h" },
 	};
@@ -89,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveEnemiga, 3266209843);
+	IMPLEMENT_CLASS(ANaveEnemiga, 767414061);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ANaveEnemiga>()
 	{
 		return ANaveEnemiga::StaticClass();

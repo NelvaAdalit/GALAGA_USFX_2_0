@@ -21,20 +21,21 @@ AFacadeCanon::AFacadeCanon()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	TopLeftCorner = FVector(-800.f, -800.f, 250.f);
-	TopRightCorner = FVector(-800.f, -100.f, 250.f);
-	DownLeftCorner = FVector(-800.f, 700.f, 250.f);
-	DownRightCorner = FVector(-800.f, 250.f, 250.f);
+	TopBala = FVector(-800.f, -500.f, 250.f);
+	TopLazer = FVector(-800.f, -100.f, 250.f);
+	TopHielo= FVector(-800.f, 600.f, 250.f);
+	TopBomba = FVector(-800.f, 250.f, 250.f);
 	NivelInicial= 1;
-	IntervaloNivel = 0.5f;
+	IntervaloNivel = 9.0f;//temporizador
 	MaxNivel = 3;
+    //aqui establece la posicion 
 }
 
 // Called when the game starts or when spawned
 void AFacadeCanon::BeginPlay()
 {
 	Super::BeginPlay();
-	SpawnCanons(NivelInicial);
+	//SpawnCanons(NivelInicial);
 	GetWorldTimerManager().SetTimer(IntervaloNivelimerHandle, this, &AFacadeCanon::IncreaseNivel, IntervaloNivel, true);
 }
 
@@ -46,7 +47,7 @@ void AFacadeCanon::Tick(float DeltaTime)
 }
 
 void AFacadeCanon::SpawnCanons(int32 Nivel)
-{
+{//aqui  se establece el nivel de los canones
     TSubclassOf<AModeloCanon> BalaClass;
     TSubclassOf<AModeloCanon> LazerClass;
     TSubclassOf<AModeloCanon> BmbaClass;
@@ -57,7 +58,7 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
     {
     case 1:
         BalaClass = ACanonBalaNv1::StaticClass();
-        LazerClass = ACanonLazerNv1::StaticClass();
+        LazerClass = ACanonLazerNv1::StaticClass(); 
         BmbaClass = ACanonBombaNv1::StaticClass();
         HieloClass = ACanonHieloNv1::StaticClass();
         break;
@@ -76,12 +77,13 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
         return;
     }
 
-    SpawnCanon(BalaClass, TopLeftCorner);
-    SpawnCanon(LazerClass, TopRightCorner);
-    SpawnCanon(BmbaClass, DownLeftCorner);
-    SpawnCanon(HieloClass, DownRightCorner);
+    SpawnCanon(BalaClass, TopBala);
+    SpawnCanon(LazerClass, TopLazer);
+    SpawnCanon(BmbaClass, TopBomba);
+    SpawnCanon(HieloClass, TopHielo);
 
 }
+
 
 void AFacadeCanon::SpawnCanon(TSubclassOf<AModeloCanon> CanonClass, FVector Location)
 {
@@ -95,12 +97,14 @@ void AFacadeCanon::SpawnCanon(TSubclassOf<AModeloCanon> CanonClass, FVector Loca
 
 void AFacadeCanon::IncreaseNivel()
 {
+
     if (NivelInicial < MaxNivel)
     {
         NivelInicial++;
         CleanUpCanones(); //borrar canones de otros niveles antes de spawnear los nuevos
         SpawnCanons(NivelInicial);
     }
+
 
 }
 

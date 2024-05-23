@@ -24,8 +24,16 @@ public:
 	virtual void Tick(float DeltaTime) override;
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* Arma;
-	int velocidad;
+	UStaticMeshComponent* mallaProyectil;
 
-	void Mover(float DeltaTime);
+	float velocidadDisparo;
+	float Disparodano;
+	float Colision = 0;
+	FORCEINLINE float GetVelocidadDisparo() const { return velocidadDisparo; }
+	FORCEINLINE float GetDisparoDano() const { return Disparodano; }
+	FORCEINLINE void SetVelocidadDisparo(float _velocidad) { velocidadDisparo = _velocidad; }
+
+	void movimento(float DeltaTime);
+	void TiempoDisparo(float Colision);
+
 };

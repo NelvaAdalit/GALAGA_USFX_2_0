@@ -2,21 +2,26 @@
 
 
 #include "ArmaNN.h"
+#include "GameFramework/ProjectileMovementComponent.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Components/StaticMeshComponent.h"
+#include "GameFramework/ProjectileMovementComponent.h"
+#include "Engine/StaticMesh.h"
+#include "GALAGA_USFX_2_0Projectile.h"
+#include "GALAGA_USFX_2_0GameMode.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AArmaNN::AArmaNN()
 {
-	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Meshes/BulletEnemyLevel2.BulletEnemyLevel2'"));
-	Arma = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
-	Arma->SetStaticMesh(ShipMesh.Object);
-	;//static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Meshes/Nodriza2.Nodriza2'"));
-
-	SetActorRelativeScale3D(FVector(3.0f, 3.0f, 3.0f));
-
-	velocidad = 500.0f;
-
-	RootComponent = Arma;
+    PrimaryActorTick.bCanEverTick = true;
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> ProjectileMeshAsset(TEXT("StaticMesh'/Game/Meshes/Shapes/Shape_Sphere.Shape_Sphere'"));
+    mallaProyectil = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
+    mallaProyectil->SetStaticMesh(ProjectileMeshAsset.Object);
+    mallaProyectil->SetupAttachment(RootComponent);
+    velocidadDisparo = 1000;
+    Disparodano = 20;
+    mallaProyectil->SetRelativeScale3D(FVector(0.3f, 0.3f, 0.3f));
 }
 
 // Called when the game starts or when spawned
@@ -29,16 +34,23 @@ void AArmaNN::BeginPlay()
 // Called every frame
 void AArmaNN::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-	Mover(DeltaTime);
+    Super::Tick(DeltaTime);
+    Colision += GetWorld()->DeltaTimeSeconds;
+    TiempoDisparo(Colision);
+    movimento(DeltaTime);
 }
 
-void AArmaNN::Mover(float DeltaTime)
+void AArmaNN::movimento(float DeltaTime)
 {
-	FVector PosActual = GetActorLocation();
+    FVector NewLocation = GetActorLocation() + -GetActorForwardVector() * velocidadDisparo * GetWorld()->GetDeltaSeconds();
+    SetActorLocation(NewLocation);
 
-	FVector NuevaPos = PosActual + FVector(-velocidad * DeltaTime, 0.0f, 0.0f);
-
-	SetActorLocation(NuevaPos);
 }
+
+void AArmaNN::TiempoDisparo(float _Colision)
+{
+
+}
+
+
 

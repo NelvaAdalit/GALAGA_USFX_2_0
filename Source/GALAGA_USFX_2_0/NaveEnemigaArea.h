@@ -3,9 +3,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
-#include "MovimientoNN.h"
-#include "GALAGA_USFX_2_0Projectile.h"
 #include "NaveEnemigaArea.generated.h"
+
 /**
  * 
  */
@@ -20,6 +19,14 @@ public:
 public:
 	
 	virtual void Tick(float DeltaTime) override;
+public:
+	float velocidadDisparo;
+	float Disparodano;
+	float Colision = 0;
+	FORCEINLINE float GetVelocidadDisparo() const { return velocidadDisparo; }
+	FORCEINLINE float GetDisparoDano() const { return Disparodano; }
+	FORCEINLINE void SetVelocidadDisparo(float _velocidad) { velocidadDisparo = _velocidad; }
 
-	UMovimientoNN* Movimiento;
+	void movimento(float DeltaTime);
+
 };

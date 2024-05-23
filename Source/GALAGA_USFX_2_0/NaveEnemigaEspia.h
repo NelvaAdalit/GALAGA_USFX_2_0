@@ -10,7 +10,6 @@
  * 
  */
 
-class UMovimientoNN;
 UCLASS()
 class GALAGA_USFX_2_0_API ANaveEnemigaEspia : public ANaveEnemiga
 {

@@ -18,5 +18,5 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 	virtual void Disparar() override;
-	virtual void ResetFire() override;
+	virtual void ResetFire() override;//
 };

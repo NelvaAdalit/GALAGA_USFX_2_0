@@ -11,7 +11,7 @@ UMovimientoNN::UMovimientoNN()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	
-	MovimientoSig = 4;
+	MovimientoSig = 2;
 	bMovimientoDerecha = true;
 	bMovimientoArriba = true;
 

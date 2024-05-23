@@ -14,7 +14,7 @@ class GALAGA_USFX_2_0_API AModeloCanon : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AModeloCanon();
-	UStaticMeshComponent* meshCanion;
+	UStaticMeshComponent* meshCanion;//componente de malla estatica
 
 protected:
 	// Called when the game starts or when spawned
@@ -30,7 +30,7 @@ protected:
 	float FireRate;
 	int MaxProjectile;
 	int NumberFired;
-	int direccion = 1;
+	//int direccion = 1;
 	float velocidad = 6;
 public:
 	FORCEINLINE void SetDureza(int _dureza) { dureza = _dureza; }

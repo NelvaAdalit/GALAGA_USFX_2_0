@@ -4,7 +4,7 @@
 #include "CanonBala.h"
 #include"GALAGA_USFX_2_0Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
-#include "Proyectil.h"
+#include "ProyectilBala.h"
 
 #include "Kismet/GameplayStatics.h"
 ACanonBala::ACanonBala()
@@ -36,7 +36,7 @@ void ACanonBala::Disparar()
 		{
 			FVector Location = GetActorLocation();
 			FRotator Rotation = GetActorRotation();
-			World->SpawnActor<AProyectil>(Location, Rotation);
+			World->SpawnActor<AProyectilBala>(Location, Rotation);
 			NumberFired++;
 
 			// Establecer el temporizador para el próximo disparo

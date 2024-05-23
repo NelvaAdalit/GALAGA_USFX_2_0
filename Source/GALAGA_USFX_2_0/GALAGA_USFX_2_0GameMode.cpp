@@ -35,7 +35,7 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	Jugador->Lanzar();
 	FormacionCanones = GetWorld()->SpawnActor<AFacadeCanon>();
 	FormacionCanones->SpawnCanons(1);
-	FormacionCanones->IncreaseNivel();
+	//FormacionCanones->IncreaseNivel();
 
 
 
@@ -53,14 +53,14 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 		for (int i = 0; i < 5; i++)
 		{
 			//ColocacionActual = FVector(ColocacionActual.X+250, ColocacionActual.Y + i , ColocacionActual.Z);
-			ANaveEnemiga* NewAerea = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Area", World, FVector(1780.0f, 200.0f * i, 160.0f), FRotator::ZeroRotator);
+			ANaveEnemiga* NewAerea = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Area", World, FVector(780.0f, 400.0f * i, 160.0f), FRotator::ZeroRotator);
 			
 			//TANavesEnemigas.Add(NewAerea);
 		}
 		
-		for (int z = 0; z < 12; z++) {
+		for (int z = 0; z < 6; z++) {
 
-		         ANaveEnemiga*NuevasNaveEnemigaEspia=AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Espia",World,FVector(1780.0f,-100.0*z,200.0f), FRotator::ZeroRotator);
+		         ANaveEnemiga*NuevasNaveEnemigaEspia=AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Espia",World,FVector(780.0f,-200.0*z,100.0f), FRotator::ZeroRotator);
 		        // TANavesEnemigas.Push(NuevasNaveEnemigaEspia);
 		
 		}

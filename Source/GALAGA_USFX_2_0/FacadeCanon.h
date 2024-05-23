@@ -27,11 +27,13 @@ public:
 	void IncreaseNivel();//aumentar nivel
 	void CleanUpCanones();//limpiar canones
 
-	//ubicaciones en extremos
-	FVector TopLeftCorner;
-	FVector TopRightCorner;
-	FVector DownLeftCorner;
-	FVector DownRightCorner;
+	//ubicaciones en extremos 
+	FVector TopBala;
+	FVector TopLazer;
+	FVector TopHielo;
+	FVector TopBomba;
+
+	
 
 	TArray<AModeloCanon*> ExistingCanons;
 

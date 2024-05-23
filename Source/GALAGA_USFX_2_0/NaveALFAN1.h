@@ -21,7 +21,7 @@ public:
 	ANaveALFAN1();
 
 	class ACascoNN* Estructura;
-	class AEscudoNN* Escudo;
+	//class AEscudoNN* Escudo;
 	class AArmaNN* Arma;
 	class APatrullaEnigmaNN* patrullaEneigma;
 	int vida;
