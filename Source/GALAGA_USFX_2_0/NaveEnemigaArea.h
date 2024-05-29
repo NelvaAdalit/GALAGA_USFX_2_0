@@ -32,7 +32,6 @@ public:
 
 	class AEscudoNN* EscudoNave;
 
-	void ImplementarRadar(class ARadarNave* radar);
 	void RENOVAR(FString _accion) override;
 
 	
@@ -41,10 +40,10 @@ public:
 	virtual void AyudaDronExtra() ;
 
 
-	int  VidaNave = 3;
-	int GetVidaNave() const {
+	//int  VidaNave = 3;
+	/*int GetVidaNave() const {
 		return VidaNave;
-	}
+	}*/
 
 	float EnergiaNave = 200;
 	float GetEnergiaNave() const {
@@ -63,7 +62,7 @@ public:
 	UPROPERTY()
 	class AEscudoNN* EscudoNaveSuscripcionS;
 	UPROPERTY()
-	class ANaveKelly* DronNaveSuscripcionS;
+	class ANaveKelly* Dron;
 private:
 	UPROPERTY(VisibleAnywhere, Category = "Suscriptor")
 	class ARadarNave* _Radar;

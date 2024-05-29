@@ -22,5 +22,15 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* kelly;
+	FVector PosicionInicial;
+	int  VelocidadMovimiento;
+
+	float Limiteinferior = -580;
+	float LimiteSuperior = 300;
+	float LimiteIzquierdo = -710;
+	float LimiteDerecho = 400;
 
 };

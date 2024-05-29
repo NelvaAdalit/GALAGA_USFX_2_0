@@ -28,7 +28,7 @@ ANaveEnemigaArea::ANaveEnemigaArea()
 	 NumberFired = 0;
 	 bCanFire = true;
 	 
-	 VidaNave = 10;
+	// VidaNave = 10;
 	 velocidad = -100;
 
 
@@ -37,6 +37,8 @@ ANaveEnemigaArea::ANaveEnemigaArea()
 void ANaveEnemigaArea::BeginPlay()
 {
 	Super::BeginPlay();
+
+	
 }
 
 void ANaveEnemigaArea::Tick(float DeltaTime)
@@ -84,18 +86,25 @@ void ANaveEnemigaArea::Disparar()
 			GetWorldTimerManager().SetTimer(TimerHandle, this, &ANaveEnemigaArea::ResetFire, rand() % 6 + 1, false);
 
 			EnergiaNave -= 20;
-			if (EnergiaNave < 150)
+			if (EnergiaNave == 140)
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Ayuda"));
 				AyudaEscudo();
 			}
+			if( EnergiaNave == 100 )
+				AyudaPropulsores();
+			}
+		if (EnergiaNave == 80)
+		{
+				AyudaDronExtra();
+		}
 
 			GetEnergiaNave();
 		}
 
 	}
 
-}
+
 
 void ANaveEnemigaArea::ResetFire()
 {
@@ -111,10 +120,7 @@ void ANaveEnemigaArea::ResetFire()
 	}
 }
 
-void ANaveEnemigaArea::ImplementarRadar(ARadarNave* radar)
-{
 
-}
 
 void ANaveEnemigaArea::RENOVAR(FString _accion)
 {
@@ -123,15 +129,31 @@ void ANaveEnemigaArea::RENOVAR(FString _accion)
 		AyudaEscudo();
 	}
 	
+	if (_accion == "Propulsores")
+	{
+		AyudaPropulsores();
+	}
+
+	if (_accion == "Dron")
+	{
+		AyudaDronExtra();
+	}
+	
+	
+	
 }
 
 void ANaveEnemigaArea::AyudaPropulsores()
 {
+	FVector PosicionPropulsores = FVector(170, 140, 200);
+
+	ACanonBala* NuevoPropulsor = GetWorld()->SpawnActor <ACanonBala>(PosicionPropulsores, FRotator::ZeroRotator);
+
 }
 
 void ANaveEnemigaArea::AyudaEscudo()
 {
-	FVector PosicionEscudo = FVector(-70, 20, 300);
+	FVector PosicionEscudo = FVector(70, 20, 300);
 
     AEscudoNN* NuevoEscudo = GetWorld()->SpawnActor <AEscudoNN>(PosicionEscudo, FRotator::ZeroRotator);
 	
@@ -139,6 +161,8 @@ void ANaveEnemigaArea::AyudaEscudo()
 
 void ANaveEnemigaArea::AyudaDronExtra()
 {
+	FVector PosicionDron = FVector(-170, 70, 300);
+	ANaveKelly* NuevoDron = GetWorld()->SpawnActor <ANaveKelly>(PosicionDron, FRotator::ZeroRotator);
 }
 
 

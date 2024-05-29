@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "IRENOVACIONESus.h"
+#include "ISuscriptor.h"
 #include "RadarNave.generated.h"
 UCLASS()
 class GALAGA_USFX_2_0_API ARadarNave : public AActor, public IIRENOVACIONESus
@@ -24,16 +25,20 @@ public:
 	virtual void Tick(float DeltaTime) override;
 public:
 
+
 	virtual void RenovarSuscripcion(IISuscriptor* Suscriptor) override;
 	virtual void renovarProyectiles(IISuscriptor* Suscriptor) override;
-	virtual void AyudaPropulsores() override;
-	virtual void AyudaEscudo() override;
 	void Notificar(const FString& Accion) override;
-	virtual void AyudaDronExtra() override;
+
+	
 
 	class AEscudoNN* Escudo;
+	class ACanonBala*CanonBala;
+	class ANaveKelly* Dron;
 	class ANaveEnemigaArea* NaveEnemigaAerea;
+
 private:
+
 	TArray<IISuscriptor*> Suscriptores;
 
 };

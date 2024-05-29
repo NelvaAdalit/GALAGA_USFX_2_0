@@ -26,9 +26,8 @@ public:
 	virtual void RenovarSuscripcion(IISuscriptor* Suscriptor) = 0;
 	virtual void renovarProyectiles(IISuscriptor* Suscriptor) = 0;
     virtual void Notificar(const FString& Accion) = 0;
-	virtual void AyudaPropulsores() = 0;
-	virtual void AyudaEscudo() = 0;
-	virtual void AyudaDronExtra() = 0;
-	TArray<IISuscriptor*> Suscriptores;
+	//publicador
+
+	
 
 };

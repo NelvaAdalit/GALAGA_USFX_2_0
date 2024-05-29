@@ -20,7 +20,7 @@ AProyectilBala::AProyectilBala()
 	mallaProyectil = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
 	mallaProyectil->SetStaticMesh(ProjectileMeshAsset.Object);
 	mallaProyectil->SetupAttachment(RootComponent);
-	velocidadDisparo = -800;
+	velocidadDisparo = 800;
 	Disparodano = 20;
 	mallaProyectil->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
 

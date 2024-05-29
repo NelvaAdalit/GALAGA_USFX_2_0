@@ -50,9 +50,9 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaArea() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EscudoNaveSuscripcionS;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DronNaveSuscripcionS_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Dron_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DronNaveSuscripcionS;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Dron;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__Radar_MetaData[];
 #endif
@@ -92,11 +92,11 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaArea() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_EscudoNaveSuscripcionS = { "EscudoNaveSuscripcionS", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANaveEnemigaArea, EscudoNaveSuscripcionS), Z_Construct_UClass_AEscudoNN_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_EscudoNaveSuscripcionS_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_EscudoNaveSuscripcionS_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_DronNaveSuscripcionS_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_Dron_MetaData[] = {
 		{ "ModuleRelativePath", "NaveEnemigaArea.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_DronNaveSuscripcionS = { "DronNaveSuscripcionS", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANaveEnemigaArea, DronNaveSuscripcionS), Z_Construct_UClass_ANaveKelly_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_DronNaveSuscripcionS_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_DronNaveSuscripcionS_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_Dron = { "Dron", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANaveEnemigaArea, Dron), Z_Construct_UClass_ANaveKelly_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_Dron_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_Dron_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp__Radar_MetaData[] = {
 		{ "Category", "Suscriptor" },
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaArea() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_ProyectilNaveHielo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_PropulsoresNaveSuscripcionS,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_EscudoNaveSuscripcionS,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_DronNaveSuscripcionS,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp_Dron,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANaveEnemigaArea_Statics::NewProp__Radar,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ANaveEnemigaArea_Statics::InterfaceParams[] = {
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemigaArea() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveEnemigaArea, 1050580281);
+	IMPLEMENT_CLASS(ANaveEnemigaArea, 4259839436);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ANaveEnemigaArea>()
 	{
 		return ANaveEnemigaArea::StaticClass();
