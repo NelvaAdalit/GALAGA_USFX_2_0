@@ -28,6 +28,7 @@ public:
 	void CleanUpCanones();//limpiar canones
 
 	//ubicaciones en extremos 
+
 	FVector TopBala;
 	FVector TopLazer;
 	FVector TopHielo;
@@ -35,7 +36,7 @@ public:
 
 	
 
-	TArray<AModeloCanon*> ExistingCanons;
+	TArray<AModeloCanon*> ExistingCanons; 
 
 	int32 NivelInicial;
 	float  IntervaloNivel;

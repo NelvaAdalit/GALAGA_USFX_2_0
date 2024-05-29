@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MovimientoNN.h"
 #include "NaveEnemiga.generated.h"
 
 UCLASS(ABSTRACT)
@@ -28,12 +27,16 @@ protected:
 	float tiempoReaparicion;
 	FString nombre;
 	FVector posicion;
-	FVector ubicacionActual;
-	float Limiteinferior = -1680;
-	float LimiteSuperior = 1550;
-	float LimiteIzquierdo = -1270.0;
-	float LimiteDerecho = 1520;
 
+
+
+
+
+protected:
+
+	virtual void Disparar() PURE_VIRTUAL(AModeloCanon::Disparar, ;)
+	virtual void ResetFire() PURE_VIRTUAL(AModeloCanon::ResetFire, ;)
+   FTimerHandle TimerHandle_ShotTimerExpired;
 
 public:
 	FORCEINLINE float GetVelocidad() const { return velocidad; }
@@ -60,10 +63,18 @@ public:
 	FORCEINLINE void SetPosicion(FVector _posicion) { posicion = _posicion; }
 
 
-protected:
+public:
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	int dureza;
+	int cantidadProyectiles;
+	uint32 bCanFire : 1;//entero de 32 bits
+	float FireRate;
+	int MaxProjectile;
+	int NumberFired;
+	//int direccion = 1;
+	float velocidadN = 6;
 
 public:
 
@@ -72,7 +83,23 @@ public:
 
 
 protected:
-	void Mover(float DeltaTime) PURE_VIRTUAL(ANaveEnemiga::Mover, );
+
+	FVector ubicacionActual;
+	float Limiteinferior = -1680;
+	float LimiteSuperior = 1550;
+	float LimiteIzquierdo = -1270.0;
+	float LimiteDerecho = 1520;
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,30 +3,76 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
+#include "ISuscriptor.h"
+#include "IRENOVACIONESus.h"
 #include "NaveEnemigaArea.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class GALAGA_USFX_2_0_API ANaveEnemigaArea : public ANaveEnemiga
+class GALAGA_USFX_2_0_API ANaveEnemigaArea : public ANaveEnemiga, public IISuscriptor
 {
 	GENERATED_BODY()
 public:
 	ANaveEnemigaArea();
-	FString NombreNave;
+
+	virtual void BeginPlay() override;
 
 public:
-	
+
 	virtual void Tick(float DeltaTime) override;
 public:
-	float velocidadDisparo;
-	float Disparodano;
-	float Colision = 0;
-	FORCEINLINE float GetVelocidadDisparo() const { return velocidadDisparo; }
-	FORCEINLINE float GetDisparoDano() const { return Disparodano; }
-	FORCEINLINE void SetVelocidadDisparo(float _velocidad) { velocidadDisparo = _velocidad; }
+	void Mover(float DeltaTime);
+	virtual void Disparar() override;
+	virtual void ResetFire() override;
 
-	void movimento(float DeltaTime);
+
+public:
+
+	class AEscudoNN* EscudoNave;
+
+	void ImplementarRadar(class ARadarNave* radar);
+	void RENOVAR(FString _accion) override;
+
+	
+	virtual void AyudaPropulsores() ;
+	virtual void AyudaEscudo() ;
+	virtual void AyudaDronExtra() ;
+
+
+	int  VidaNave = 3;
+	int GetVidaNave() const {
+		return VidaNave;
+	}
+
+	float EnergiaNave = 200;
+	float GetEnergiaNave() const {
+		return EnergiaNave;
+	}
+	int ProyectilNave;
+
+	FVector PosicionNave;
+	FVector PosicionNaveSuscripcion;
+	int VelocidadNave;
+	int VelocidadNaveSuscripcion;
+	UPROPERTY()
+	class AProyectil* ProyectilNaveHielo;
+	UPROPERTY()
+	class ACanonBala* PropulsoresNaveSuscripcionS;
+	UPROPERTY()
+	class AEscudoNN* EscudoNaveSuscripcionS;
+	UPROPERTY()
+	class ANaveKelly* DronNaveSuscripcionS;
+private:
+	UPROPERTY(VisibleAnywhere, Category = "Suscriptor")
+	class ARadarNave* _Radar;
+
+	
+
+
+   
+
+
 
 };

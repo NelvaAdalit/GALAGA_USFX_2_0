@@ -2,6 +2,7 @@
 
 #include "NaveEnemiga.h"
 #include "NaveEnemigaEspia.h"
+#include "proyectilLazer.h"
 
 
 ANaveEnemiga::ANaveEnemiga()
@@ -14,166 +15,19 @@ ANaveEnemiga::ANaveEnemiga()
     SetActorRotation(FRotator(0.0f, 180.0f, 0.0f));
     SetActorRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 
-
+	velocidad = 100.0f;
+	energia = 100.0f;
 
 }
 
 void ANaveEnemiga::BeginPlay()
 {
+	Super::BeginPlay();
 }
 
 void ANaveEnemiga::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	if (ubicacionActual.X > LimiteSuperior) {
 		SetActorLocation(FVector(0.0f, ubicacionActual.Y, ubicacionActual.Z));
@@ -190,6 +44,8 @@ void ANaveEnemiga::Tick(float DeltaTime)
 	if (ubicacionActual.Y < LimiteIzquierdo) {
 		SetActorLocation(FVector(ubicacionActual.X, 100.0f, ubicacionActual.Z));
 	}
+
+
 
 }
 

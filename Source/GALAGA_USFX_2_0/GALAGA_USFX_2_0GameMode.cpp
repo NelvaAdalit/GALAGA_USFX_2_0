@@ -7,7 +7,6 @@
 #include "NaveEnemigaArea.h"
 #include "NaveEnemigaEspia.h"
 #include "NaveCombate.h"
-#include "FabriNaves.h"
 #include "NaveNodrizaBase.h"
 #include "BuilderNaveNodriza.h"
 #include "NaveNodriza.h"
@@ -41,35 +40,35 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 
 
 
-	FRotator rotacionNave = FRotator(0.0f, 0.0f, 0.0f);
-	//FVector ColocacionInicialNaves = FVector(-500.0f, 50.0f, 270.f);
-	FVector PosicionInicialNavesEspias = FVector(-150, -2520, 214);
-	//
-	UWorld* World = GetWorld();
-	if (World)
+	FRotator rotacionNave = FRotator(0.0f,0.0f, 0.0f);
+
+	FVector PosicionInicialNavesAereas = FVector(-150, -2520, 214);
+	FVector PosicionInicialNavesEspias = FVector(500.0f, 500.0f, 250.0f);
+	FVector ColocacionInicialNaves = FVector(-500.0f, 50.0f, 270.f);
+
+
+	UWorld* const World = GetWorld();
+	if (World != nullptr)
 	{
-		//FVector ColocacionActual = ColocacionInicialNaves;
-		// Crear las naves enemigas
-		for (int i = 0; i < 5; i++)
-		{
-			//ColocacionActual = FVector(ColocacionActual.X+250, ColocacionActual.Y + i , ColocacionActual.Z);
-			ANaveEnemiga* NewAerea = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Area", World, FVector(780.0f, 400.0f * i, 160.0f), FRotator::ZeroRotator);
-			
-			//TANavesEnemigas.Add(NewAerea);
-		}
-		
-		for (int z = 0; z < 6; z++) {
+		FVector ColocacionActual = ColocacionInicialNaves;
+		for (int i = 0; i < 5; i++) {
 
-		         ANaveEnemiga*NuevasNaveEnemigaEspia=AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Espia",World,FVector(780.0f,-200.0*z,100.0f), FRotator::ZeroRotator);
-		        // TANavesEnemigas.Push(NuevasNaveEnemigaEspia);
+			ColocacionActual = FVector(1780.0f, 200.0f *i, 160.0f);
+			ANaveEnemigaArea* NaveEnemigaAreaActual = World->SpawnActor<ANaveEnemigaArea>(ColocacionActual, rotacionNave);
+			TANavesEnemigas.Add(NaveEnemigaAreaActual);
+
+		}
 		
+		for (int i = 0; i < 5; i++) {
+
+			ColocacionActual = FVector(-1780.0f, -200.0f * i, 160.0f);
+			ANaveEnemigaEspia* NaveEnemigaEspiaActual = World->SpawnActor<ANaveEnemigaEspia>(ColocacionActual, rotacionNave);
+			TANavesEnemigas.Add(NaveEnemigaEspiaActual);
+
 		}
-		for (int j = 0; j < 7; j++) {
-			ANaveEnemiga*NuevasNaveEnemigaCombate = AFabriNaves::OrdenarNaveEnemiga("Nave Enemiga Combate", World, FVector(1800.0f, -100.0f * j, 160.0f), FRotator::ZeroRotator);
-			//TANavesEnemigas.Push(NuevasNaveEnemigaCombate);
-		}
+
+		
 	}
-
 
 	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ANaveNodriza::StaticClass());
 	Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>(ADirectorDeNaveNodriza::StaticClass());
@@ -77,10 +76,37 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	Director->establecerNavenodriza();
 	ANaveALFAN1* naveAlfa = Director->devolverNave();
 
+
+
+
 }
+
+
+
+
 
 void AGALAGA_USFX_2_0GameMode::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);	
+	
+
+	Super::Tick(DeltaTime);
+
+	TiempoTranscurrido++;
+
+	if (TiempoTranscurrido >= 100)
+	{
+		int numeroEnemigo = FMath::RandRange(0, 9);
+		if (GEngine)
+		{
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString::Printf(TEXT("Hola estoy aqui")));
+
+
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Entero: %d"), numeroEnemigo));
+
+		}
+		//TANavesEnemigas[numeroEnemigo]->PrimaryActorTick.bCanEverTick = true;
+		//TANavesEnemigas[numeroEnemigo]->SetVelocidad(0);
+	}
+	
 }
 

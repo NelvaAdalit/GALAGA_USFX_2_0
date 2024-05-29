@@ -17,6 +17,7 @@ public:
 	float velocidadDisparo;
 	float Disparodano;
 	float Colision = 0;
+
 public:
 	// Sets default values for this character's properties
 	AProyectilBala();

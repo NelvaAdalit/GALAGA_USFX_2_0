@@ -24,14 +24,12 @@ private:
 	//ADirectorDeNaveNodriza* Director;
 
 protected:
-	virtual void BeginPlay() override;	
+	virtual void BeginPlay() override;
 public:
-	virtual void Tick(float DeltaTime) override;	
+	virtual void Tick(float DeltaTime) override;
 public:
 
-	TArray<ANaveEnemiga*> TANavesEnemigas;
-	//TArray<ANaveEnemigaArea*> TANavesEnemigasAereas;
-	TArray<ANaveEnemigaEspia*> TANavesEnemigasEspia;
+
 private:
 
 
@@ -39,13 +37,23 @@ private:
 	class ANaveNodriza* NaveNodriza;
 	class ADirectorDeNaveNodriza* Director;
 	AFacadeCanon* FormacionCanones;
-	
+public:
+	 ANaveEnemigaArea*NaveEnemigaArea01;
+	 ANaveEnemigaEspia*NaveEnemigaEspia01;
 
 public:
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
 	class AGALAGA_USFX_2_0Pawn* Jugador;
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
 	class ABallAdapter* Adaptador;
+public:
+
+	/*TArray<ANaveEnemiga*>TANavesEnemigas;
+	TArray<ANaveEnemigaArea*>TANavesEnemigasAerea;
+	TArray<ANaveEnemigaEspia*>TANavesEnemigasEspia;*/
+	int TiempoTranscurrido;
+	TArray<ANaveEnemiga*> TANavesEnemigas;
+	TMap<FString, ANaveEnemiga*>TMapCambiarVelocidad;
 };
 
 

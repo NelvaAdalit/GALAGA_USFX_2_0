@@ -87,6 +87,7 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
 
 void AFacadeCanon::SpawnCanon(TSubclassOf<AModeloCanon> CanonClass, FVector Location)
 {
+
     if (GetWorld())
     {
         FActorSpawnParameters SpawnParams;

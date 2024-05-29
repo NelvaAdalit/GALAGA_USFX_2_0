@@ -36,6 +36,7 @@ void AProyectilBala::BeginPlay()
 // Called every frame
 void AProyectilBala::Tick(float DeltaTime)
 {
+
 	Super::Tick(DeltaTime);
 	Colision += GetWorld()->DeltaTimeSeconds;
 	TiempoDisparo(Colision);
@@ -82,6 +83,7 @@ void AProyectilBala::TiempoDisparo(float _Colision)
 	{
 		Destroy();
 	}
+
 }
 
 
