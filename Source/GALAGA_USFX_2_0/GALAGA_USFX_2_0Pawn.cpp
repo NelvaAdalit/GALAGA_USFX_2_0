@@ -197,3 +197,21 @@ void AGALAGA_USFX_2_0Pawn::Lanzar()
 
 }
 
+void AGALAGA_USFX_2_0Pawn::Damage(float Damage)
+{
+	LifePawn -= Damage;
+}
+
+void AGALAGA_USFX_2_0Pawn::Componentes_Colision()
+{
+	//Efecto de Explosion 
+	if (ShipExplosion)
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ShipExplosion, GetActorTransform());
+	//Sonido de la explosion
+
+	if (ExplosionSoundShip != nullptr)
+		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSoundShip, GetActorLocation());
+
+	this->Destroy();
+}
+

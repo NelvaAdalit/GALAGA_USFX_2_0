@@ -4,7 +4,6 @@
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
 #include "ISuscriptor.h"
-#include "IRENOVACIONESus.h"
 #include "NaveEnemigaArea.generated.h"
 
 /**
@@ -35,15 +34,9 @@ public:
 	void RENOVAR(FString _accion) override;
 
 	
-	virtual void AyudaPropulsores() ;
+	virtual void AyudaCanonBala() ;
 	virtual void AyudaEscudo() ;
-	virtual void AyudaDronExtra() ;
-
-
-	//int  VidaNave = 3;
-	/*int GetVidaNave() const {
-		return VidaNave;
-	}*/
+	virtual void AyudaCapsulaBombaExtra() ;
 
 	float EnergiaNave = 200;
 	float GetEnergiaNave() const {
@@ -55,14 +48,15 @@ public:
 	FVector PosicionNaveSuscripcion;
 	int VelocidadNave;
 	int VelocidadNaveSuscripcion;
+
 	UPROPERTY()
 	class AProyectil* ProyectilNaveHielo;
 	UPROPERTY()
-	class ACanonBala* PropulsoresNaveSuscripcionS;
+	class ACanonBala* CanonBala;
 	UPROPERTY()
 	class AEscudoNN* EscudoNaveSuscripcionS;
 	UPROPERTY()
-	class ANaveKelly* Dron;
+	class ACapsulaBomba* CapsulaBomba;
 private:
 	UPROPERTY(VisibleAnywhere, Category = "Suscriptor")
 	class ARadarNave* _Radar;

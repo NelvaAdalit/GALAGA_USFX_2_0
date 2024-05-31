@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GALAGA_USFX_2_0_ISuscriptor_generated_h
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_SPARSE_DATA
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_RPC_WRAPPERS
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_STANDARD_CONSTRUCTORS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_SPARSE_DATA
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_RPC_WRAPPERS
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	GALAGA_USFX_2_0_API UISuscriptor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UISuscriptor) \
@@ -29,7 +29,7 @@ private: \
 public:
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_ENHANCED_CONSTRUCTORS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	GALAGA_USFX_2_0_API UISuscriptor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -42,7 +42,7 @@ public: \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UISuscriptor)
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_GENERATED_UINTERFACE_BODY() \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUISuscriptor(); \
 	friend struct Z_Construct_UClass_UISuscriptor_Statics; \
@@ -51,22 +51,22 @@ public: \
 	DECLARE_SERIALIZER(UISuscriptor)
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_GENERATED_BODY_LEGACY \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_GENERATED_UINTERFACE_BODY() \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_STANDARD_CONSTRUCTORS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_GENERATED_UINTERFACE_BODY() \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_GENERATED_BODY \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_GENERATED_UINTERFACE_BODY() \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_ENHANCED_CONSTRUCTORS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_GENERATED_UINTERFACE_BODY() \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IISuscriptor() {} \
 public: \
@@ -75,7 +75,7 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_INCLASS_IINTERFACE \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IISuscriptor() {} \
 public: \
@@ -84,23 +84,23 @@ public: \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_11_PROLOG
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_22_GENERATED_BODY_LEGACY \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_9_PROLOG
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_20_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_SPARSE_DATA \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_RPC_WRAPPERS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_INCLASS_IINTERFACE \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_SPARSE_DATA \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_RPC_WRAPPERS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_22_GENERATED_BODY \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_SPARSE_DATA \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_SPARSE_DATA \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_ISuscriptor_h_12_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

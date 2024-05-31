@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GALAGA_USFX_2_0.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6FC299B8-8A5D-42F2-B639-305558BAE6A3}</UniqueIdentifier>
+      <UniqueIdentifier>{36E5C4B3-00B1-40B6-9D18-F95C077EA778}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
       <Filter>Source</Filter>
@@ -15,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\Temp.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{36E110E2-AAD9-4AA3-8392-1F670E087A02}</UniqueIdentifier>
+      <UniqueIdentifier>{139CEF6E-2707-46AD-806A-850DA8CC4641}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA_USFX_2_0">
-      <UniqueIdentifier>{2BB64B00-55B7-4C04-B565-9AEE3580AD03}</UniqueIdentifier>
+      <UniqueIdentifier>{1AE9331F-5138-4CAC-BB01-67C79C9D570B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\AdaptadorExtranjero.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
@@ -230,12 +230,6 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\IBounceBall.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\IRENOVACIONESus.cpp">
-      <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\IRENOVACIONESus.h">
-      <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ISuscriptor.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
@@ -336,6 +330,12 @@
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\Proyectil.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\CapsulaBomba.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\CapsulaBomba.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ProyectilBala.cpp">

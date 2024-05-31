@@ -4,9 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "PublicadorObs.h"
 #include "ISuscriptor.generated.h"
-
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI)
 class UISuscriptor : public UInterface
@@ -25,5 +23,6 @@ class GALAGA_USFX_2_0_API IISuscriptor
 public:
 
 	virtual void RENOVAR (FString _accion) = 0;
+	//que me va aservir para enviar acciones a mis suscriptores
 
 };

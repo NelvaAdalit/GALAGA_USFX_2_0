@@ -9,14 +9,11 @@
 #include "Proyectil.h"
 #include "CanonBala.h"
 #include "EscudoNN.h"
-#include "NaveKelly.h"
-
-
-
+#include "CapsulaBomba.h"
 
 ANaveEnemigaArea::ANaveEnemigaArea()
 {
-	PrimaryActorTick.bCanEverTick = true;
+	 PrimaryActorTick.bCanEverTick = true;
 
 	 static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/Meshes/EnemyLevel2.EnemyLevel2'"));
 	 mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
@@ -27,11 +24,7 @@ ANaveEnemigaArea::ANaveEnemigaArea()
 	 MaxProjectile = 10;
 	 NumberFired = 0;
 	 bCanFire = true;
-	 
-	// VidaNave = 10;
 	 velocidad = -100;
-
-
 }
 
 void ANaveEnemigaArea::BeginPlay()
@@ -92,11 +85,11 @@ void ANaveEnemigaArea::Disparar()
 				AyudaEscudo();
 			}
 			if( EnergiaNave == 100 )
-				AyudaPropulsores();
+				AyudaCanonBala();
 			}
 		if (EnergiaNave == 80)
 		{
-				AyudaDronExtra();
+				AyudaCapsulaBombaExtra();
 		}
 
 			GetEnergiaNave();
@@ -121,7 +114,6 @@ void ANaveEnemigaArea::ResetFire()
 }
 
 
-
 void ANaveEnemigaArea::RENOVAR(FString _accion)
 {
 	if (_accion == "Escudos")
@@ -129,40 +121,39 @@ void ANaveEnemigaArea::RENOVAR(FString _accion)
 		AyudaEscudo();
 	}
 	
-	if (_accion == "Propulsores")
+	if (_accion == "CanonBala")
 	{
-		AyudaPropulsores();
+		AyudaCanonBala();
 	}
 
-	if (_accion == "Dron")
+	if (_accion == "CapsulaBomba")
 	{
-		AyudaDronExtra();
+		AyudaCapsulaBombaExtra();
 	}
-	
-	
 	
 }
 
-void ANaveEnemigaArea::AyudaPropulsores()
+void ANaveEnemigaArea::AyudaCanonBala()
 {
-	FVector PosicionPropulsores = FVector(170, 140, 200);
+	FVector PosicionCanon= FVector(70, 140,300);
 
-	ACanonBala* NuevoPropulsor = GetWorld()->SpawnActor <ACanonBala>(PosicionPropulsores, FRotator::ZeroRotator);
+	ACanonBala* NuevoCanon = GetWorld()->SpawnActor <ACanonBala>(PosicionCanon, FRotator::ZeroRotator);
+
 
 }
 
 void ANaveEnemigaArea::AyudaEscudo()
 {
-	FVector PosicionEscudo = FVector(70, 20, 300);
+	FVector PosicionEscudo = FVector(70, 140, 100);
 
     AEscudoNN* NuevoEscudo = GetWorld()->SpawnActor <AEscudoNN>(PosicionEscudo, FRotator::ZeroRotator);
 	
 }
 
-void ANaveEnemigaArea::AyudaDronExtra()
+void ANaveEnemigaArea::AyudaCapsulaBombaExtra()
 {
 	FVector PosicionDron = FVector(-170, 70, 300);
-	ANaveKelly* NuevoDron = GetWorld()->SpawnActor <ANaveKelly>(PosicionDron, FRotator::ZeroRotator);
+	ACapsulaBomba* NuevoDron = GetWorld()->SpawnActor <ACapsulaBomba>(PosicionDron, FRotator::ZeroRotator);
 }
 
 

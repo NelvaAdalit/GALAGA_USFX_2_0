@@ -5,7 +5,7 @@
 #include "NaveEnemigaArea.h"
 #include "EscudoNN.h"
 #include "CanonBala.h"
-#include "NaveKelly.h"
+#include "CapsulaBomba.h"
 #include "ISuscriptor.h"
 
 // Sets default values
@@ -30,39 +30,40 @@ void ARadarNave::Tick(float DeltaTime)
 
 }
 
-void ARadarNave::RenovarSuscripcion(IISuscriptor* Suscriptor)
+void ARadarNave::Suscribir(IISuscriptor* Suscriptor)
 {
 	if(Suscriptor){
 		Suscriptores.Add(Suscriptor);
 	}
 
+
 }
 
-void ARadarNave::renovarProyectiles(IISuscriptor* Suscriptor)
+void ARadarNave::Desuscribir(IISuscriptor* Suscriptor)
 {
 	if(Suscriptor){
 		Suscriptores.Remove(Suscriptor);
 	}
 }
 	
-	
-
 
 void ARadarNave::Notificar(const FString& Accion)
 {
+	//con un for recorro los suscriptes y les envio la accion
+
 	for (IISuscriptor* Suscriptor : Suscriptores) {
 		NaveEnemigaAerea = Cast <ANaveEnemigaArea>(GetWorld()->SpawnActor(ANaveEnemigaArea::StaticClass()));
 
 
-		FVector PosicionPropulsor = FVector(200, -500, 350);
+		FVector CanonBalaP= FVector(200, -500, 350);
 
 		if (NaveEnemigaAerea->GetEnergiaNave() == 140)
 		{
 
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Propulsor Creado"));
 			CanonBala = Cast <ACanonBala>(GetWorld()->SpawnActor(ACanonBala::StaticClass()));
-			ACanonBala* NuevoPropulsor = GetWorld()->SpawnActor <ACanonBala>(PosicionPropulsor, FRotator::ZeroRotator);
-			NaveEnemigaAerea->RENOVAR("Propulsores");
+			ACanonBala* NuevoCanonBala = GetWorld()->SpawnActor <ACanonBala>(CanonBalaP, FRotator::ZeroRotator);
+			NaveEnemigaAerea->RENOVAR("CanonBala");
 
 		}
 
@@ -70,7 +71,7 @@ void ARadarNave::Notificar(const FString& Accion)
 		NaveEnemigaAerea = Cast <ANaveEnemigaArea>(GetWorld()->SpawnActor(ANaveEnemigaArea::StaticClass()));
 
 
-		FVector PosicionEscudo = FVector(-200, -500, 250);
+		FVector PosicionEscudo = FVector(200, -500, 300);
 
 		if (NaveEnemigaAerea->GetEnergiaNave() == 120)
 		{
@@ -82,22 +83,20 @@ void ARadarNave::Notificar(const FString& Accion)
 		}
 		
 		NaveEnemigaAerea = Cast <ANaveEnemigaArea>(GetWorld()->SpawnActor(ANaveEnemigaArea::StaticClass())); {
-			FVector PosicionDron = FVector(400, 500, 250);
+			FVector PosicionCapsulaBomba= FVector(400, 500, 250);
 
 			if (NaveEnemigaAerea->GetEnergiaNave() == 100)
 			{
 
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Dron Creado"));
-				Dron = Cast <ANaveKelly>(GetWorld()->SpawnActor(ANaveKelly::StaticClass()));
-				ANaveKelly* NuevoDron = GetWorld()->SpawnActor <ANaveKelly>(PosicionDron, FRotator::ZeroRotator);
-				NaveEnemigaAerea->RENOVAR("Dron");
+				Bomba = Cast <ACapsulaBomba>(GetWorld()->SpawnActor(ACapsulaBomba::StaticClass()));
+				ACapsulaBomba* NuevoBomba= GetWorld()->SpawnActor <ACapsulaBomba>(PosicionCapsulaBomba, FRotator::ZeroRotator);
+				NaveEnemigaAerea->RENOVAR("CapsulaBomba");
 			}
 			
 
 		}
 	}
-
-
 }
 
 

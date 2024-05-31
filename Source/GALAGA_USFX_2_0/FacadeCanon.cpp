@@ -48,7 +48,7 @@ void AFacadeCanon::Tick(float DeltaTime)
 
 void AFacadeCanon::SpawnCanons(int32 Nivel)
 {//aqui  se establece el nivel de los canones
-    TSubclassOf<AModeloCanon> BalaClass;
+    //TSubclassOf<AModeloCanon> BalaClass;
     TSubclassOf<AModeloCanon> LazerClass;
     TSubclassOf<AModeloCanon> BmbaClass;
     TSubclassOf<AModeloCanon> HieloClass;
@@ -57,19 +57,19 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
     switch (Nivel)
     {
     case 1:
-        BalaClass = ACanonBalaNv1::StaticClass();
+     //   BalaClass = ACanonBalaNv1::StaticClass();
         LazerClass = ACanonLazerNv1::StaticClass(); 
         BmbaClass = ACanonBombaNv1::StaticClass();
         HieloClass = ACanonHieloNv1::StaticClass();
         break;
     case 2:
-        BalaClass = ACanonBalaNv2::StaticClass();
+       // BalaClass = ACanonBalaNv2::StaticClass();
         LazerClass = ACanonLazerNv2::StaticClass();
         BmbaClass = ACanonBombaNv2::StaticClass();
         HieloClass = ACanonHieloNv2::StaticClass();
         break;
     case 3:
-        BalaClass = ACanonBalaNv3::StaticClass();
+       // BalaClass = ACanonBalaNv3::StaticClass();
         LazerClass = ACanonLazerNv3::StaticClass();
         BmbaClass = ACanonBombaNv3::StaticClass();
         HieloClass = ACanonHieloNv3::StaticClass();
@@ -77,7 +77,7 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
         return;
     }
 
-    SpawnCanon(BalaClass, TopBala);
+    //SpawnCanon(BalaClass, TopBala);
     SpawnCanon(LazerClass, TopLazer);
     SpawnCanon(BmbaClass, TopBomba);
     SpawnCanon(HieloClass, TopHielo);

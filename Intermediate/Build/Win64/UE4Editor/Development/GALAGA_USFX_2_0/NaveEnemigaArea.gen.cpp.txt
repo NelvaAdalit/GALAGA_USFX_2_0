@@ -5,9 +5,5 @@ D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/NaveEnemigaArea.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\NaveEnemiga.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemiga.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\ISuscriptor.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\PublicadorObs.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\PublicadorObs.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\ISuscriptor.generated.h
-D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\IRENOVACIONESus.h
-D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\IRENOVACIONESus.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\NaveEnemigaArea.generated.h

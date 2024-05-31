@@ -15,9 +15,8 @@ void EmptyLinkFunctionForGeneratedCodeRadarNave() {}
 // Cross Module References
 	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_ARadarNave_NoRegister();
 	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_ARadarNave();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_APublicadorObs();
 	UPackage* Z_Construct_UPackage__Script_GALAGA_USFX_2_0();
-	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_UIRENOVACIONESus_NoRegister();
 // End Cross Module References
 	void ARadarNave::StaticRegisterNativesARadarNave()
 	{
@@ -32,12 +31,11 @@ void EmptyLinkFunctionForGeneratedCodeRadarNave() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ARadarNave_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_APublicadorObs,
 		(UObject* (*)())Z_Construct_UPackage__Script_GALAGA_USFX_2_0,
 	};
 #if WITH_METADATA
@@ -46,9 +44,6 @@ void EmptyLinkFunctionForGeneratedCodeRadarNave() {}
 		{ "ModuleRelativePath", "RadarNave.h" },
 	};
 #endif
-		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ARadarNave_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UIRENOVACIONESus_NoRegister, (int32)VTABLE_OFFSET(ARadarNave, IIRENOVACIONESus), false },
-		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARadarNave_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARadarNave>::IsAbstract,
 	};
@@ -59,11 +54,11 @@ void EmptyLinkFunctionForGeneratedCodeRadarNave() {}
 		DependentSingletons,
 		nullptr,
 		nullptr,
-		InterfaceParams,
+		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		0,
-		UE_ARRAY_COUNT(InterfaceParams),
+		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ARadarNave_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ARadarNave_Statics::Class_MetaDataParams))
 	};
@@ -76,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeRadarNave() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARadarNave, 3884516155);
+	IMPLEMENT_CLASS(ARadarNave, 1029235330);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ARadarNave>()
 	{
 		return ARadarNave::StaticClass();

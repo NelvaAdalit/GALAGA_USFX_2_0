@@ -68,6 +68,10 @@ private:
 	FTimerHandle TimerHandle_ShotTimerExpired;
 
 public:
+	UPROPERTY(EditAnywhere, Category = "Particula de Explosion")
+	class UParticleSystem* ShipExplosion;
+	UPROPERTY(EditAnywhere, Category = "Audio_Explosion")
+	class USoundBase* ExplosionSoundShip;
 	/** Returns ShipMeshComponent subobject **/
 	FORCEINLINE class UStaticMeshComponent* GetShipMeshComponent() const { return ShipMeshComponent; }
 	/** Returns CameraComponent subobject **/
@@ -105,6 +109,11 @@ public:
 	class IIBounceBall*BounceBall;
 	void SetBounceBall(AActor* _Adaptador);
 	void Lanzar() override;
+public:
+	float LifePawn;
+	void Damage(float Damage);
+	void Componentes_Colision();
+	float GetHelth() const { return LifePawn; }
 };
 
 

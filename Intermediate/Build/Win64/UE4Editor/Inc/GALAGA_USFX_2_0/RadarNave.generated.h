@@ -13,30 +13,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GALAGA_USFX_2_0_RadarNave_generated_h
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_SPARSE_DATA
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_RPC_WRAPPERS
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_INCLASS_NO_PURE_DECLS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_SPARSE_DATA
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_RPC_WRAPPERS
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARadarNave(); \
 	friend struct Z_Construct_UClass_ARadarNave_Statics; \
 public: \
-	DECLARE_CLASS(ARadarNave, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
-	DECLARE_SERIALIZER(ARadarNave) \
-	virtual UObject* _getUObject() const override { return const_cast<ARadarNave*>(this); }
+	DECLARE_CLASS(ARadarNave, APublicadorObs, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
+	DECLARE_SERIALIZER(ARadarNave)
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_INCLASS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesARadarNave(); \
 	friend struct Z_Construct_UClass_ARadarNave_Statics; \
 public: \
-	DECLARE_CLASS(ARadarNave, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
-	DECLARE_SERIALIZER(ARadarNave) \
-	virtual UObject* _getUObject() const override { return const_cast<ARadarNave*>(this); }
+	DECLARE_CLASS(ARadarNave, APublicadorObs, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
+	DECLARE_SERIALIZER(ARadarNave)
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_STANDARD_CONSTRUCTORS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ARadarNave(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ARadarNave) \
@@ -49,7 +47,7 @@ private: \
 public:
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_ENHANCED_CONSTRUCTORS \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ARadarNave(ARadarNave&&); \
@@ -60,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ARadarNave)
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_PRIVATE_PROPERTY_OFFSET
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_10_PROLOG
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_GENERATED_BODY_LEGACY \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_PRIVATE_PROPERTY_OFFSET
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_11_PROLOG
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_PRIVATE_PROPERTY_OFFSET \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_SPARSE_DATA \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_RPC_WRAPPERS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_INCLASS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_STANDARD_CONSTRUCTORS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_PRIVATE_PROPERTY_OFFSET \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_SPARSE_DATA \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_RPC_WRAPPERS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_INCLASS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_GENERATED_BODY \
+#define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_PRIVATE_PROPERTY_OFFSET \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_SPARSE_DATA \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_INCLASS_NO_PURE_DECLS \
-	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_13_ENHANCED_CONSTRUCTORS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_PRIVATE_PROPERTY_OFFSET \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_SPARSE_DATA \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_INCLASS_NO_PURE_DECLS \
+	GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_RadarNave_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

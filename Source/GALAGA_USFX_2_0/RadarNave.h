@@ -4,11 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "IRENOVACIONESus.h"
+#include "PublicadorObs.h"
 #include "ISuscriptor.h"
 #include "RadarNave.generated.h"
+
 UCLASS()
-class GALAGA_USFX_2_0_API ARadarNave : public AActor, public IIRENOVACIONESus
+class GALAGA_USFX_2_0_API ARadarNave:  public APublicadorObs
 {
 	GENERATED_BODY()
 	
@@ -23,22 +24,20 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
 public:
 
+	  virtual void Suscribir(IISuscriptor* Suscriptor) override;
+      virtual  void Desuscribir(IISuscriptor* Suscriptor) override;
+	  virtual void Notificar(const FString& Accion)override;
+	  TArray<IISuscriptor*> Suscriptores;
 
-	virtual void RenovarSuscripcion(IISuscriptor* Suscriptor) override;
-	virtual void renovarProyectiles(IISuscriptor* Suscriptor) override;
-	void Notificar(const FString& Accion) override;
-
-	
-
+//yo estoy haciendo que estas clases ayuden a mis naves enemivgas aereas  las tomo por referencia 
 	class AEscudoNN* Escudo;
 	class ACanonBala*CanonBala;
-	class ANaveKelly* Dron;
+	class ACapsulaBomba*Bomba;
 	class ANaveEnemigaArea* NaveEnemigaAerea;
 
-private:
-
-	TArray<IISuscriptor*> Suscriptores;
+	
 
 };

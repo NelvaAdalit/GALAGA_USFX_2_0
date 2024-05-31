@@ -3,6 +3,7 @@
 
 #include "PublicadorObs.h"
 
+
 // Sets default values
 APublicadorObs::APublicadorObs()
 {
@@ -24,4 +25,18 @@ void APublicadorObs::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
+void APublicadorObs::Suscribir(IISuscriptor* Suscriptor)
+{
+}
+
+void APublicadorObs::Desuscribir(IISuscriptor* Suscriptor)
+{
+}
+
+void APublicadorObs::Notificar(const FString& Accion)
+{
+}
+
+
 

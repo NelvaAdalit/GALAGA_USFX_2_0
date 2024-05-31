@@ -22,6 +22,7 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	GALAGA_USFX_2_0_API UClass* Z_Construct_UClass_UIBounceBall_NoRegister();
 // End Cross Module References
 	void AGALAGA_USFX_2_0Pawn::StaticRegisterNativesAGALAGA_USFX_2_0Pawn()
@@ -65,6 +66,14 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireSound_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShipExplosion_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ShipExplosion;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ExplosionSoundShip_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ExplosionSoundShip;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -152,6 +161,20 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_FireSound = { "FireSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGALAGA_USFX_2_0Pawn, FireSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_FireSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_FireSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ShipExplosion_MetaData[] = {
+		{ "Category", "Particula de Explosion" },
+		{ "ModuleRelativePath", "GALAGA_USFX_2_0Pawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ShipExplosion = { "ShipExplosion", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGALAGA_USFX_2_0Pawn, ShipExplosion), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ShipExplosion_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ShipExplosion_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ExplosionSoundShip_MetaData[] = {
+		{ "Category", "Audio_Explosion" },
+		{ "ModuleRelativePath", "GALAGA_USFX_2_0Pawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ExplosionSoundShip = { "ExplosionSoundShip", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGALAGA_USFX_2_0Pawn, ExplosionSoundShip), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ExplosionSoundShip_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ExplosionSoundShip_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ShipMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_CameraComponent,
@@ -160,6 +183,8 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_FireRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_MoveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_FireSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ShipExplosion,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::NewProp_ExplosionSoundShip,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AGALAGA_USFX_2_0Pawn_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UIBounceBall_NoRegister, (int32)VTABLE_OFFSET(AGALAGA_USFX_2_0Pawn, IIBounceBall), false },
@@ -191,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeGALAGA_USFX_2_0Pawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGALAGA_USFX_2_0Pawn, 1390819747);
+	IMPLEMENT_CLASS(AGALAGA_USFX_2_0Pawn, 692243180);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<AGALAGA_USFX_2_0Pawn>()
 	{
 		return AGALAGA_USFX_2_0Pawn::StaticClass();
