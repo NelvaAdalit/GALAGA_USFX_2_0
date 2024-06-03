@@ -27,12 +27,13 @@ public:
 
 public:
 
-	  virtual void Suscribir(IISuscriptor* Suscriptor) override;
-      virtual  void Desuscribir(IISuscriptor* Suscriptor) override;
-	  virtual void Notificar(const FString& Accion)override;
+	  void Suscribir(IISuscriptor* Suscriptor) override;
+      void Desuscribir(IISuscriptor* Suscriptor) override;
+	  void Notificar(const FString& Accion)override;
 	  TArray<IISuscriptor*> Suscriptores;
 
 //yo estoy haciendo que estas clases ayuden a mis naves enemivgas aereas  las tomo por referencia 
+
 	class AEscudoNN* Escudo;
 	class ACanonBala*CanonBala;
 	class ACapsulaBomba*Bomba;

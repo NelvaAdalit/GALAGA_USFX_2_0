@@ -13,7 +13,7 @@
 #include "GALAGA_USFX_2_0Projectile.h"
 #include "Kismet/GameplayStatics.h"
 #include "BallAdapter.h"
-
+#include "RadarNave.h"
 
 
 AGALAGA_USFX_2_0GameMode::AGALAGA_USFX_2_0GameMode()
@@ -26,12 +26,15 @@ AGALAGA_USFX_2_0GameMode::AGALAGA_USFX_2_0GameMode()
 
 void AGALAGA_USFX_2_0GameMode::BeginPlay()
 {
+
 	Super::BeginPlay();
 
 	Jugador=Cast<AGALAGA_USFX_2_0Pawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	Adaptador=GetWorld()->SpawnActor<ABallAdapter>(ABallAdapter::StaticClass(),FVector(0,0,0),FRotator::ZeroRotator);
 	Jugador->SetBounceBall(Adaptador);
 	Jugador->Lanzar();
+
+
 	FormacionCanones = GetWorld()->SpawnActor<AFacadeCanon>();
 	FormacionCanones->SpawnCanons(1);
 	//FormacionCanones->IncreaseNivel();
@@ -47,15 +50,25 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	FVector ColocacionInicialNaves = FVector(-500.0f, 50.0f, 270.f);
 
 
+	//Pattern Observer
+
+//castear el radar 
+
+	
+	RadarNave = Cast <ARadarNave>(GetWorld()->SpawnActor(ARadarNave::StaticClass()));
+
 	UWorld* const World = GetWorld();
 	if (World != nullptr)
 	{
 		FVector ColocacionActual = ColocacionInicialNaves;
 		for (int i = 0; i < 5; i++) {
 
+		
 			ColocacionActual = FVector(1780.0f, 200.0f *i, 160.0f);
 			ANaveEnemigaArea* NaveEnemigaAreaActual = World->SpawnActor<ANaveEnemigaArea>(ColocacionActual, rotacionNave);
 			TANavesEnemigas.Add(NaveEnemigaAreaActual);
+
+			RadarNave->Suscribir(NaveEnemigaAreaActual);
 
 		}
 		

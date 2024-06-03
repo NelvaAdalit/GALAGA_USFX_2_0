@@ -49,25 +49,24 @@ void ARadarNave::Desuscribir(IISuscriptor* Suscriptor)
 
 void ARadarNave::Notificar(const FString& Accion)
 {
+
 	//con un for recorro los suscriptes y les envio la accion
 
 	for (IISuscriptor* Suscriptor : Suscriptores) {
 		NaveEnemigaAerea = Cast <ANaveEnemigaArea>(GetWorld()->SpawnActor(ANaveEnemigaArea::StaticClass()));
-
-
+		
+		
 		FVector CanonBalaP= FVector(200, -500, 350);
 
 		if (NaveEnemigaAerea->GetEnergiaNave() == 140)
 		{
-
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Propulsor Creado"));
 			CanonBala = Cast <ACanonBala>(GetWorld()->SpawnActor(ACanonBala::StaticClass()));
 			ACanonBala* NuevoCanonBala = GetWorld()->SpawnActor <ACanonBala>(CanonBalaP, FRotator::ZeroRotator);
 			NaveEnemigaAerea->RENOVAR("CanonBala");
 
+		
 		}
-
-
 		NaveEnemigaAerea = Cast <ANaveEnemigaArea>(GetWorld()->SpawnActor(ANaveEnemigaArea::StaticClass()));
 
 
@@ -87,7 +86,6 @@ void ARadarNave::Notificar(const FString& Accion)
 
 			if (NaveEnemigaAerea->GetEnergiaNave() == 100)
 			{
-
 				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Dron Creado"));
 				Bomba = Cast <ACapsulaBomba>(GetWorld()->SpawnActor(ACapsulaBomba::StaticClass()));
 				ACapsulaBomba* NuevoBomba= GetWorld()->SpawnActor <ACapsulaBomba>(PosicionCapsulaBomba, FRotator::ZeroRotator);

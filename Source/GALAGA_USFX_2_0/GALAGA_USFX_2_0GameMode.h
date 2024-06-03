@@ -54,6 +54,10 @@ public:
 	int TiempoTranscurrido;
 	TArray<ANaveEnemiga*> TANavesEnemigas;
 	TMap<FString, ANaveEnemiga*>TMapCambiarVelocidad;
+
+	class ARadarNave* RadarNave;
+
+
 };
 
 

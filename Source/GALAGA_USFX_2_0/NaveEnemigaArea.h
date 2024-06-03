@@ -48,7 +48,6 @@ public:
 	FVector PosicionNaveSuscripcion;
 	int VelocidadNave;
 	int VelocidadNaveSuscripcion;
-
 	UPROPERTY()
 	class AProyectil* ProyectilNaveHielo;
 	UPROPERTY()

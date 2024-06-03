@@ -38,4 +38,16 @@ public:
 
 	void movimento(float DeltaTime);
 	void TiempoDisparo(float Colision);
+
+	//void CreateIceArea(FVector Location);
+	//UFUNCTION()
+	//void OnIceZoneOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	//void DestroyIceZone();
+	//void CreateIceArea(FVector Location);
+	//UFUNCTION()
+	//void OnIceZoneOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	//void DestroyIceZone();
+
+	//FTimerHandle TimerHandle;
+	//USphereComponent* IceZone;
 };

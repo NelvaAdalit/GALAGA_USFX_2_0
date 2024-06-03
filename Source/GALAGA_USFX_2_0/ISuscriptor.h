@@ -23,6 +23,8 @@ class GALAGA_USFX_2_0_API IISuscriptor
 public:
 
 	virtual void RENOVAR (FString _accion) = 0;
-	//que me va aservir para enviar acciones a mis suscriptores
+
+
+
 
 };

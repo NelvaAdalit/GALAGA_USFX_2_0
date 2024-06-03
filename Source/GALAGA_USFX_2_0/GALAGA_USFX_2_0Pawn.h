@@ -109,6 +109,7 @@ public:
 	class IIBounceBall*BounceBall;
 	void SetBounceBall(AActor* _Adaptador);
 	void Lanzar() override;
+
 public:
 	float LifePawn;
 	void Damage(float Damage);

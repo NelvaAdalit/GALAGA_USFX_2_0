@@ -101,7 +101,7 @@ void ANaveEnemigaArea::Disparar()
 
 void ANaveEnemigaArea::ResetFire()
 {
-	if (NumberFired < MaxProjectile)
+		if (NumberFired < MaxProjectile)
 	{
 		bCanFire = true;  // Permitir el siguiente disparo
 		Disparar();         // Disparar automáticamente la siguiente bomba
@@ -118,7 +118,7 @@ void ANaveEnemigaArea::RENOVAR(FString _accion)
 {
 	if (_accion == "Escudos")
 	{
-		AyudaEscudo();
+		AyudaEscudo(); 
 	}
 	
 	if (_accion == "CanonBala")
@@ -138,8 +138,6 @@ void ANaveEnemigaArea::AyudaCanonBala()
 	FVector PosicionCanon= FVector(70, 140,300);
 
 	ACanonBala* NuevoCanon = GetWorld()->SpawnActor <ACanonBala>(PosicionCanon, FRotator::ZeroRotator);
-
-
 }
 
 void ANaveEnemigaArea::AyudaEscudo()

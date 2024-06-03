@@ -5,9 +5,6 @@
     <Filter Include="Source">
       <UniqueIdentifier>{36E5C4B3-00B1-40B6-9D18-F95C077EA778}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
-      <Filter>Source</Filter>
-    </None>
     <None Include="..\..\Source\GALAGA_USFX_2_0Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
@@ -368,5 +365,8 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\RadarNave.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
+    <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </None>
   </ItemGroup>
 </Project>

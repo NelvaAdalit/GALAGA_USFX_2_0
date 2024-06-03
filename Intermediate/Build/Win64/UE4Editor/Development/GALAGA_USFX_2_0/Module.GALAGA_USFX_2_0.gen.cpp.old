@@ -37,7 +37,6 @@
 #include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveCombate1.gen.cpp"
 #include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveCombate2.gen.cpp"
 #include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveEnemiga.gen.cpp"
-#include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveEnemigaArea.gen.cpp"
 #include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveEnemigaEspia.gen.cpp"
 #include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveKelly.gen.cpp"
 #include "D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/NaveNodriza.gen.cpp"
