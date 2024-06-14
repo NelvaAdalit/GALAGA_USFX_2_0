@@ -28,7 +28,7 @@ public:
 
 	 virtual void Suscribir(IISuscriptor* Suscriptor);
      virtual  void Desuscribir(IISuscriptor* Suscriptor);
-	 virtual  void Notificar(const FString& Accion);
+	 virtual  void Notificar();
 	 TArray<IISuscriptor*> Suscriptores;
 
 

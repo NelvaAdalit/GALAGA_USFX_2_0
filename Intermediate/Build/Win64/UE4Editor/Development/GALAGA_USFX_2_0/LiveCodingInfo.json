@@ -17,11 +17,9 @@
 			"CanonBombaNv1.cpp.obj",
 			"CanonBombaNv2.cpp.obj",
 			"CanonBombaNv3.cpp.obj",
-			"CanonHielo.cpp.obj",
 			"CanonHieloNv1.cpp.obj",
 			"CanonHieloNv2.cpp.obj",
 			"CanonHieloNv3.cpp.obj",
-			"CanonLazer.cpp.obj",
 			"CanonLazerNv1.cpp.obj",
 			"CanonLazerNv2.cpp.obj",
 			"CanonLazerNv3.cpp.obj",
@@ -52,11 +50,16 @@
 			"ProyectilBala.cpp.obj",
 			"ProyectilBomba.cpp.obj",
 			"proyectilLazer.cpp.obj",
-			"PublicadorObs.cpp.obj",
+			"CanonHielo.cpp.obj",
+			"CanonLazer.cpp.obj",
 			"FacadeCanon.cpp.obj",
 			"GALAGA_USFX_2_0GameMode.cpp.obj",
+			"IVISITABLE.cpp.obj",
+			"IVISITOR.cpp.obj",
 			"NaveEnemigaArea.cpp.obj",
-			"RadarNave.cpp.obj"
+			"PublicadorObs.cpp.obj",
+			"RadarNave.cpp.obj",
+			"VisitorDisparo.cpp.obj"
 		],
 		"Module.GALAGA_USFX_2_0.gen.cpp.obj": [
 			"AdaptadorExtranjero.gen.cpp.obj",
@@ -74,10 +77,6 @@
 			"CanonBombaNv1.gen.cpp.obj",
 			"CanonBombaNv2.gen.cpp.obj",
 			"CanonBombaNv3.gen.cpp.obj",
-			"CanonHielo.gen.cpp.obj",
-			"CanonHieloNv1.gen.cpp.obj",
-			"CanonHieloNv2.gen.cpp.obj",
-			"CanonHieloNv3.gen.cpp.obj",
 			"CanonLazer.gen.cpp.obj",
 			"CanonLazerNv1.gen.cpp.obj",
 			"CanonLazerNv2.gen.cpp.obj",
@@ -87,7 +86,6 @@
 			"DirectorDeNaveNodriza.gen.cpp.obj",
 			"EscudoNN.gen.cpp.obj",
 			"FacadeCanon.gen.cpp.obj",
-			"GALAGA_USFX_2_0.init.gen.cpp.obj",
 			"GALAGA_USFX_2_0GameMode.gen.cpp.obj",
 			"GALAGA_USFX_2_0Pawn.gen.cpp.obj",
 			"GALAGA_USFX_2_0Projectile.gen.cpp.obj",
@@ -113,7 +111,15 @@
 			"ProyectilBomba.gen.cpp.obj",
 			"proyectilLazer.gen.cpp.obj",
 			"PublicadorObs.gen.cpp.obj",
-			"RadarNave.gen.cpp.obj"
+			"RadarNave.gen.cpp.obj",
+			"CanonHielo.gen.cpp.obj",
+			"CanonHieloNv1.gen.cpp.obj",
+			"CanonHieloNv2.gen.cpp.obj",
+			"CanonHieloNv3.gen.cpp.obj",
+			"GALAGA_USFX_2_0.init.gen.cpp.obj",
+			"IVISITABLE.gen.cpp.obj",
+			"IVISITOR.gen.cpp.obj",
+			"VisitorDisparo.gen.cpp.obj"
 		]
 	}
 }

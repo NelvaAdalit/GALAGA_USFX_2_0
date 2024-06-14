@@ -3,8 +3,11 @@
   <ItemGroup>
     <None Include="..\..\GALAGA_USFX_2_0.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{36E5C4B3-00B1-40B6-9D18-F95C077EA778}</UniqueIdentifier>
+      <UniqueIdentifier>{A4C1A093-23E7-47E1-950D-9C9DF55BFCF0}</UniqueIdentifier>
     </Filter>
+    <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
+      <Filter>Source</Filter>
+    </None>
     <None Include="..\..\Source\GALAGA_USFX_2_0Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
@@ -12,7 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\Temp.txt" />
     <Filter Include="Config">
-      <UniqueIdentifier>{139CEF6E-2707-46AD-806A-850DA8CC4641}</UniqueIdentifier>
+      <UniqueIdentifier>{563142B7-AC96-46A1-8C80-6C1408F25501}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GALAGA_USFX_2_0">
-      <UniqueIdentifier>{1AE9331F-5138-4CAC-BB01-67C79C9D570B}</UniqueIdentifier>
+      <UniqueIdentifier>{969E8D7F-9765-41E2-A258-9F13DE9FA2A5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\AdaptadorExtranjero.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
@@ -170,6 +173,12 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\CanonLazerNv3.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\CapsulaBomba.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\CapsulaBomba.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\CascoNN.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
@@ -231,6 +240,18 @@
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\ISuscriptor.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\IVISITABLE.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\IVISITABLE.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\IVISITOR.cpp">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\IVISITOR.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ModeloCanon.cpp">
@@ -329,12 +350,6 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\Proyectil.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\CapsulaBomba.cpp">
-      <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\CapsulaBomba.h">
-      <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\ProyectilBala.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClCompile>
@@ -365,8 +380,11 @@
     <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\RadarNave.h">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
     </ClInclude>
-    <None Include="..\..\Source\GALAGA_USFX_2_0.Target.cs">
+    <ClCompile Include="..\..\Source\GALAGA_USFX_2_0\VisitorDisparo.cpp">
       <Filter>Source\GALAGA_USFX_2_0</Filter>
-    </None>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GALAGA_USFX_2_0\VisitorDisparo.h">
+      <Filter>Source\GALAGA_USFX_2_0</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

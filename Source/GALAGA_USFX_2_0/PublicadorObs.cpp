@@ -34,9 +34,10 @@ void APublicadorObs::Desuscribir(IISuscriptor* Suscriptor)
 {
 }
 
-void APublicadorObs::Notificar(const FString& Accion)
+void APublicadorObs::Notificar()
 {
 }
+
 
 
 

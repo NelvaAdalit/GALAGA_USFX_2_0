@@ -27,9 +27,10 @@ public:
 
 public:
 
+
 	  void Suscribir(IISuscriptor* Suscriptor) override;
       void Desuscribir(IISuscriptor* Suscriptor) override;
-	  void Notificar(const FString& Accion)override;
+	  void Notificar()override;
 	  TArray<IISuscriptor*> Suscriptores;
 
 //yo estoy haciendo que estas clases ayuden a mis naves enemivgas aereas  las tomo por referencia 

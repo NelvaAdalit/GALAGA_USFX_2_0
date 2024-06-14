@@ -28,6 +28,8 @@ void ARadarNave::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	Notificar();
+
 }
 
 void ARadarNave::Suscribir(IISuscriptor* Suscriptor)
@@ -47,7 +49,7 @@ void ARadarNave::Desuscribir(IISuscriptor* Suscriptor)
 }
 	
 
-void ARadarNave::Notificar(const FString& Accion)
+void ARadarNave::Notificar()
 {
 
 	//con un for recorro los suscriptes y les envio la accion

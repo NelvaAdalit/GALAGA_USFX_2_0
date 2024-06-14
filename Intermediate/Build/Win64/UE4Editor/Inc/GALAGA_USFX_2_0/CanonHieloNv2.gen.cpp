@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeCanonHieloNv2() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACanonHieloNv2, 2352787417);
+	IMPLEMENT_CLASS(ACanonHieloNv2, 3903483842);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ACanonHieloNv2>()
 	{
 		return ACanonHieloNv2::StaticClass();

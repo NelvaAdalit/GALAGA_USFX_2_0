@@ -27,30 +27,9 @@ void ACanonLazer::Tick(float DeltaTime)
 void ACanonLazer::Disparar()
 {
 
-	if (bCanFire && NumberFired < MaxProjectile) {
-		bCanFire = false;  // Prevenir nuevos disparos hasta que el temporizador expire
-
-		// creador de proycetiles
-		UWorld* const World = GetWorld();
-		if (World != NULL)
-		{
-			FVector Location = GetActorLocation();
-			FRotator Rotation = GetActorRotation();
-			World->SpawnActor<AproyectilLazer>(Location, Rotation);
-			NumberFired++;
-
-			// Establecer el temporizador para el próximo disparo
-			FTimerHandle TimerHandle;
-			GetWorldTimerManager().SetTimer(TimerHandle, this, &ACanonLazer::ResetFire, rand() % 6 + 1, false);
-
-
-
-
-
-
-		}
-	}
+	
 }
+
 
 void ACanonLazer::ResetFire()
 {

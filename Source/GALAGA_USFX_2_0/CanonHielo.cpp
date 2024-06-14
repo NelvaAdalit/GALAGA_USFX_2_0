@@ -5,6 +5,7 @@
 #include"GALAGA_USFX_2_0Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Proyectil.h"
+#include "VisitorDisparo.h"
 #include "Kismet/GameplayStatics.h"
 
 ACanonHielo::ACanonHielo()
@@ -18,39 +19,63 @@ ACanonHielo::ACanonHielo()
 		SetActorRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 }
 
+void ACanonHielo::BeginPlay()
+{
+	Super::BeginPlay();
+
+	VisitorDisparo = Cast<AVisitorDisparo>(GetWorld()->SpawnActor(AVisitorDisparo::StaticClass()));
+
+}
+
+void ACanonHielo::Accept(IIVISITOR* Visitor)
+{
+	Visitor->Visit(this);
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Visitando CanonHielo"));
+
+
+}
+
 void ACanonHielo::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	Disparar();
+	if (VisitorDisparo) {
+	
+		VisitorDisparo->Visit(this);
+	}
+	else {
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("No se encontro el visitor"));
+	
+	}
 
 }
 
 void ACanonHielo::Disparar()
 {
 
-	if (bCanFire && NumberFired < MaxProjectile) {
-		bCanFire = false;  // Prevenir nuevos disparos hasta que el temporizador expire
+	//if (bCanFire && NumberFired < MaxProjectile) {
+	//	bCanFire = false;  // Prevenir nuevos disparos hasta que el temporizador expire
 
-		// creador de proycetiles
-		UWorld* const World = GetWorld();
-		if (World != NULL)
-		{
-			FVector Location = GetActorLocation();
-			FRotator Rotation = GetActorRotation();
-			World->SpawnActor<AProyectil>(Location, Rotation);
-			NumberFired++;
+	//	// creador de proycetiles
+	//	UWorld* const World = GetWorld();
+	//	if (World != NULL)
+	//	{
+	//		FVector Location = GetActorLocation();
+	//		FRotator Rotation = GetActorRotation();
+	//		World->SpawnActor<AProyectil>(Location, Rotation);
+	//		NumberFired++;
 
-			// Establecer el temporizador para el próximo disparo
-			FTimerHandle TimerHandle;
-			GetWorldTimerManager().SetTimer(TimerHandle, this, &ACanonHielo::ResetFire, rand() % 6 + 1, false);
-
-
+	//		// Establecer el temporizador para el próximo disparo
+	//		FTimerHandle TimerHandle;
+	//		GetWorldTimerManager().SetTimer(TimerHandle, this, &ACanonHielo::ResetFire, rand() % 6 + 1, false);
 
 
 
 
-		}
-	}
+
+
+	//	}
+	//}
 }
 
 void ACanonHielo::ResetFire()

@@ -40,14 +40,22 @@ void ANaveEnemigaArea::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	Mover(DeltaTime);
+
 	Disparar();
-	
+	//esta suscribiendo el radar 
+	ARadarNave* Radar = Cast<ARadarNave>(UGameplayStatics::GetActorOfClass(GetWorld(), ARadarNave::StaticClass()));
+	if (Radar != nullptr)
+	{
+		Radar->Suscribir(this);
+	}
+
 }
 
 void ANaveEnemigaArea::Mover(float DeltaTime)
 {
 
 	/*velocidad = -100;*/
+
 	ubicacionActual = GetActorLocation();
 	float NuevaX = velocidad * DeltaTime + ubicacionActual.X;
 	FVector NuevaPosicion = FVector(NuevaX, ubicacionActual.Y, ubicacionActual.Z);

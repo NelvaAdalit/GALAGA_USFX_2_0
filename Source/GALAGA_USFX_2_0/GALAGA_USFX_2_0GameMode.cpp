@@ -30,9 +30,9 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	Super::BeginPlay();
 
 	Jugador=Cast<AGALAGA_USFX_2_0Pawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
-	Adaptador=GetWorld()->SpawnActor<ABallAdapter>(ABallAdapter::StaticClass(),FVector(0,0,0),FRotator::ZeroRotator);
-	Jugador->SetBounceBall(Adaptador);
-	Jugador->Lanzar();
+	//Adaptador=GetWorld()->SpawnActor<ABallAdapter>(ABallAdapter::StaticClass(),FVector(0,0,0),FRotator::ZeroRotator);
+	//Jugador->SetBounceBall(Adaptador);
+	//Jugador->Lanzar();
 
 
 	FormacionCanones = GetWorld()->SpawnActor<AFacadeCanon>();
@@ -55,7 +55,7 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 //castear el radar 
 
 	
-	RadarNave = Cast <ARadarNave>(GetWorld()->SpawnActor(ARadarNave::StaticClass()));
+	//RadarNave = Cast <ARadarNave>(GetWorld()->SpawnActor(ARadarNave::StaticClass()));
 
 	UWorld* const World = GetWorld();
 	if (World != nullptr)
@@ -64,11 +64,11 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 		for (int i = 0; i < 5; i++) {
 
 		
-			ColocacionActual = FVector(1780.0f, 200.0f *i, 160.0f);
+			/*ColocacionActual = FVector(1780.0f, 200.0f *i, 160.0f);
 			ANaveEnemigaArea* NaveEnemigaAreaActual = World->SpawnActor<ANaveEnemigaArea>(ColocacionActual, rotacionNave);
 			TANavesEnemigas.Add(NaveEnemigaAreaActual);
 
-			RadarNave->Suscribir(NaveEnemigaAreaActual);
+			RadarNave->Suscribir(NaveEnemigaAreaActual);*/
 
 		}
 		
@@ -83,11 +83,11 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 		
 	}
 
-	NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ANaveNodriza::StaticClass());
-	Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>(ADirectorDeNaveNodriza::StaticClass());
-	Director->ConstruirNAVENODRIZA(NaveNodriza);
-	Director->establecerNavenodriza();
-	ANaveALFAN1* naveAlfa = Director->devolverNave();
+	//NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ANaveNodriza::StaticClass());
+	//Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>(ADirectorDeNaveNodriza::StaticClass());
+	//Director->ConstruirNAVENODRIZA(NaveNodriza);
+	//Director->establecerNavenodriza();
+	//ANaveALFAN1* naveAlfa = Director->devolverNave();
 
 
 
