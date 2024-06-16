@@ -20,7 +20,7 @@ AproyectilLazer::AproyectilLazer()
 	mallaProyectil = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
 	mallaProyectil->SetStaticMesh(ProjectileMeshAsset.Object);
 	mallaProyectil->SetupAttachment(RootComponent);
-	velocidadDisparo = -10000;
+	velocidadDisparo = -1000;
 	Disparodano = 20;
 	mallaProyectil->SetRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 

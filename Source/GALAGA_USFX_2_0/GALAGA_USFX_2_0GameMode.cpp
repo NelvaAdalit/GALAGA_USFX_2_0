@@ -5,7 +5,7 @@
 #include "NaveEnemiga.h"	
 #include "FacadeCanon.h"
 #include "NaveEnemigaArea.h"
-#include "NaveEnemigaEspia.h"
+
 #include "NaveCombate.h"
 #include "NaveNodrizaBase.h"
 #include "BuilderNaveNodriza.h"
@@ -14,6 +14,11 @@
 #include "Kismet/GameplayStatics.h"
 #include "BallAdapter.h"
 #include "RadarNave.h"
+
+#include "IVISITABLE.h"
+#include "VisitorDisparo.h"
+#include "NaveEnemigaEspia.h"
+
 
 
 AGALAGA_USFX_2_0GameMode::AGALAGA_USFX_2_0GameMode()
@@ -50,6 +55,10 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 	FVector ColocacionInicialNaves = FVector(-500.0f, 50.0f, 270.f);
 
 
+
+	//AplicarDisparoVisitantes(ANaveEnemigaEspia::StaticClass(), VisitorDisparo);
+
+
 	//Pattern Observer
 
 //castear el radar 
@@ -63,12 +72,12 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 		FVector ColocacionActual = ColocacionInicialNaves;
 		for (int i = 0; i < 5; i++) {
 
-		
-			/*ColocacionActual = FVector(1780.0f, 200.0f *i, 160.0f);
+		/*
+			ColocacionActual = FVector(1780.0f, 200.0f *i, 160.0f);
 			ANaveEnemigaArea* NaveEnemigaAreaActual = World->SpawnActor<ANaveEnemigaArea>(ColocacionActual, rotacionNave);
-			TANavesEnemigas.Add(NaveEnemigaAreaActual);
+			TANavesEnemigas.Add(NaveEnemigaAreaActual);*/
 
-			RadarNave->Suscribir(NaveEnemigaAreaActual);*/
+			//RadarNave->Suscribir(NaveEnemigaAreaActual);
 
 		}
 		
@@ -82,6 +91,8 @@ void AGALAGA_USFX_2_0GameMode::BeginPlay()
 
 		
 	}
+
+
 
 	//NaveNodriza = GetWorld()->SpawnActor<ANaveNodriza>(ANaveNodriza::StaticClass());
 	//Director = GetWorld()->SpawnActor<ADirectorDeNaveNodriza>(ADirectorDeNaveNodriza::StaticClass());

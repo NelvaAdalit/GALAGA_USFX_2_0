@@ -2,14 +2,7 @@
 
 
 #include "Proyectil.h"
-#include "GameFramework/ProjectileMovementComponent.h"
-#include "UObject/ConstructorHelpers.h"
-#include "Components/StaticMeshComponent.h"
-#include "GameFramework/ProjectileMovementComponent.h"
-#include "Engine/StaticMesh.h"
-#include "GALAGA_USFX_2_0Projectile.h"
-#include "GALAGA_USFX_2_0GameMode.h"
-#include "Kismet/GameplayStatics.h"
+
 // Sets default values
 AProyectil::AProyectil()
 {

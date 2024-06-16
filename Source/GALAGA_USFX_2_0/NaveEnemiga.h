@@ -34,7 +34,7 @@ protected:
 
 protected:
 
-	virtual void Disparar() PURE_VIRTUAL(AModeloCanon::Disparar, ;)
+   virtual void Disparar() PURE_VIRTUAL(AModeloCanon::Disparar, ;)
 	virtual void ResetFire() PURE_VIRTUAL(AModeloCanon::ResetFire, ;)
    FTimerHandle TimerHandle_ShotTimerExpired;
 

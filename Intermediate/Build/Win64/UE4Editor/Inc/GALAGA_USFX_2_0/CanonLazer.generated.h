@@ -22,7 +22,8 @@ private: \
 	friend struct Z_Construct_UClass_ACanonLazer_Statics; \
 public: \
 	DECLARE_CLASS(ACanonLazer, AModeloCanon, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
-	DECLARE_SERIALIZER(ACanonLazer)
+	DECLARE_SERIALIZER(ACanonLazer) \
+	virtual UObject* _getUObject() const override { return const_cast<ACanonLazer*>(this); }
 
 
 #define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_CanonLazer_h_15_INCLASS \
@@ -31,7 +32,8 @@ private: \
 	friend struct Z_Construct_UClass_ACanonLazer_Statics; \
 public: \
 	DECLARE_CLASS(ACanonLazer, AModeloCanon, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/GALAGA_USFX_2_0"), NO_API) \
-	DECLARE_SERIALIZER(ACanonLazer)
+	DECLARE_SERIALIZER(ACanonLazer) \
+	virtual UObject* _getUObject() const override { return const_cast<ACanonLazer*>(this); }
 
 
 #define GALAGA_USFX_2_0_Source_GALAGA_USFX_2_0_CanonLazer_h_15_STANDARD_CONSTRUCTORS \

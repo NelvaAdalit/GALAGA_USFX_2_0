@@ -16,6 +16,9 @@
 #include "CanonLazerNv3.h"
 #include "CanonBombaNv3.h"
 #include "CanonHieloNv3.h"
+#include "IVISITOR.h"
+#include "VisitorDisparo.h"
+#include "VisitorMovimientos.h"
 // Sets default values
 AFacadeCanon::AFacadeCanon()
 {
@@ -37,6 +40,11 @@ void AFacadeCanon::BeginPlay()
 	Super::BeginPlay();
 	//SpawnCanons(NivelInicial);
 	GetWorldTimerManager().SetTimer(IntervaloNivelimerHandle, this, &AFacadeCanon::IncreaseNivel, IntervaloNivel, true);
+
+    // visitor=GetWorld()->SpawnActor<AVisitorDisparo>(AVisitorDisparo::StaticClass());
+
+  //  visitor=GetWorld()->SpawnActor< AVisitorMovimientos>(AVisitorMovimientos::StaticClass());
+   
 }
 
 // Called every frame
@@ -53,14 +61,39 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
     TSubclassOf<AModeloCanon> BmbaClass;
     TSubclassOf<AModeloCanon> HieloClass;
 
+
+   /* if(Nivel==1)
+	{
+		ACanonHielo* HieloClass = GetWorld()->SpawnActor<ACanonHieloNv1>(TopHielo,FRotator::ZeroRotator);
+		HieloClass->Accept(visitor);
+
+
+        ACanonLazer* LazerClass = GetWorld()->SpawnActor<ACanonLazerNv1>(TopLazer, FRotator::ZeroRotator);
+        LazerClass->Accept(visitor);
+	}
+    else if(Nivel==2)
+        {
+        ACanonHielo* HieloClass = GetWorld()->SpawnActor<ACanonHieloNv2>(TopHielo, FRotator::ZeroRotator);
+			HieloClass->Accept(visitor);
+        ACanonLazer* LazerClass = GetWorld()->SpawnActor<ACanonLazerNv2>(TopLazer, FRotator::ZeroRotator);
+        LazerClass->Accept(visitor);
+		}
+    else if(Nivel==3)
+		{
+		ACanonHielo* HieloClass = GetWorld()->SpawnActor<ACanonHieloNv3>(TopHielo, FRotator::ZeroRotator);
+        HieloClass->Accept(visitor);
+        ACanonLazer* LazerClass = GetWorld()->SpawnActor<ACanonLazerNv3>(TopLazer, FRotator::ZeroRotator);
+        LazerClass->Accept(visitor);
+        }*/
+
+
     // Determinar las clases de cañones según el nivel
     switch (Nivel)
     {
     case 1:
         BalaClass = ACanonBalaNv1::StaticClass();
-        LazerClass = ACanonLazerNv1::StaticClass(); 
+       LazerClass = ACanonLazerNv1::StaticClass(); 
         BmbaClass = ACanonBombaNv1::StaticClass();
-        HieloClass = ACanonHieloNv1::StaticClass();
         break;
     case 2:
         BalaClass = ACanonBalaNv2::StaticClass();
@@ -69,7 +102,7 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
         HieloClass = ACanonHieloNv2::StaticClass();
         break;
     case 3:
-       BalaClass = ACanonBalaNv3::StaticClass();
+        BalaClass = ACanonBalaNv3::StaticClass();
         LazerClass = ACanonLazerNv3::StaticClass();
         BmbaClass = ACanonBombaNv3::StaticClass();
         HieloClass = ACanonHieloNv3::StaticClass();
@@ -92,7 +125,14 @@ void AFacadeCanon::SpawnCanon(TSubclassOf<AModeloCanon> CanonClass, FVector Loca
     {
         FActorSpawnParameters SpawnParams;
         GetWorld()->SpawnActor<AModeloCanon>(CanonClass, Location, FRotator::ZeroRotator, SpawnParams);
+  //      ACanonHielo* canonHielo= Cast<ACanonHielo>(CanonClass);
+  // 
+  //      if(canonHielo)
+		//{
+		//	canonHielo->Accept(visitor);
+		//}
     }
+
 
 }
 

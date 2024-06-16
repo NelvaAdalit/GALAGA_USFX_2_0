@@ -27,6 +27,7 @@ void ACanonBala::Tick(float DeltaTime)
 
 void ACanonBala::Disparar()
 {
+
 	if (bCanFire && NumberFired < MaxProjectile) {
 		bCanFire = false;  // Prevenir nuevos disparos hasta que el temporizador expire
 
@@ -37,6 +38,7 @@ void ACanonBala::Disparar()
 			FVector Location = GetActorLocation();
 			FRotator Rotation = GetActorRotation();
 			World->SpawnActor<AProyectilBala>(Location, Rotation);
+			
 			NumberFired++;
 
 			// Establecer el temporizador para el próximo disparo
@@ -50,6 +52,7 @@ void ACanonBala::Disparar()
 
 		}
 	}
+
 }
 
 void ACanonBala::ResetFire()

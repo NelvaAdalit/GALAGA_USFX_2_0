@@ -58,6 +58,16 @@ public:
 	class ARadarNave* RadarNave;
 
 
+	//VISITOR
+
+	void AplicarDisparoVisitantes(ANaveEnemigaEspia* NaveEnemigaEspia);
+
+	class IIVISITABLE* PersonajeVisitable;
+
+	class AVisitorDisparo* VisitorDisparo;
+
+	class ANaveEnemigaEspia* NaveEspia;
+
 };
 
 

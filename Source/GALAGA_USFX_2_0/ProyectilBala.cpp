@@ -65,6 +65,8 @@ void AProyectilBala::movimento(float DeltaTime)
 	float Amplitude = 10.0f; // Amplitud de la onda
 	float Frequency = 2.0f;   // Frecuencia de la onda
 
+
+
 	// Movimiento ondulatorio en el eje Y
 	float SineWave = Amplitude * FMath::Sin(Frequency * Time);
 
@@ -74,6 +76,7 @@ void AProyectilBala::movimento(float DeltaTime)
 
 	// Establecer la nueva ubicación del actor
 	SetActorLocation(NewLocation);
+
 }
 
 

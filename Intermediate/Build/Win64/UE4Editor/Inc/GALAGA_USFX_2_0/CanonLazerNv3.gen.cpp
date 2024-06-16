@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeCanonLazerNv3() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACanonLazerNv3, 2175146952);
+	IMPLEMENT_CLASS(ACanonLazerNv3, 2502908341);
 	template<> GALAGA_USFX_2_0_API UClass* StaticClass<ACanonLazerNv3>()
 	{
 		return ACanonLazerNv3::StaticClass();

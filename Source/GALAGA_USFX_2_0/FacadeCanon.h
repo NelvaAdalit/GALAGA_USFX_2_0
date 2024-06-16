@@ -44,5 +44,6 @@ public:
 	FTimerHandle  IntervaloNivelimerHandle;
 	int32 MaxNivel;	// Called every frame
 	
+	class IIVISITOR* visitor;
 
 };

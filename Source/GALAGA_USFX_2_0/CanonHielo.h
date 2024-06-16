@@ -3,8 +3,8 @@
 
 #include "CoreMinimal.h"
 #include "IVISITABLE.h"
-#include "IVISITOR.h"
 #include "ModeloCanon.h"
+#include "GameFramework/Actor.h"
 #include "CanonHielo.generated.h"
 
 /**
@@ -20,13 +20,17 @@ public:
 protected:
 	virtual void BeginPlay() override;
 public:
+
 	virtual void Accept(IIVISITOR* Visitor) override;
-	
+
 	class AVisitorDisparo* VisitorDisparo;
-
-
+	class AVisitorMovimientos* VisitorMovimientos;
+	class AVisitorGenerarEscudo* VisitorGenerarEscudo;
 	virtual void Tick(float DeltaTime) override;
-	virtual void Disparar() override;
-	virtual void ResetFire() override;
+
+	void AplicarVisitor();
+	void AplicarGenerarEscudo();
+	void Disparar() override {};
+
 
 };
