@@ -25,13 +25,14 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 public:
-	void Visit(class ANaveEnemigaEspia* NaveEspia) override {};
+	
 	void Visit(class ACanonHielo* CanonHielo) override;
 	void Visit(class ACanonLazer* CanonLazer) override;
 
 	
-	void AtaqueLineal();
-	void AtaqueDisparoMultiple();
+	void DisparoLineal();
+	void DisparoMultiple();
+	void ResetFire();
 
 	class ACanonHielo* CanonHielo2;
 	class ACanonLazer* CanonLazer2;
@@ -44,7 +45,7 @@ protected:
 	int MaxProjectile;
 	int NumberFired;
 	float velocidad = 6;
-	void ResetFire();
+
 	bool bFireCanonHieloNext;
 
 

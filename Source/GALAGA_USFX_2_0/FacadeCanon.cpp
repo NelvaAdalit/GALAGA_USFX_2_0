@@ -38,12 +38,9 @@ AFacadeCanon::AFacadeCanon()
 void AFacadeCanon::BeginPlay()
 {
 	Super::BeginPlay();
+
 	//SpawnCanons(NivelInicial);
 	GetWorldTimerManager().SetTimer(IntervaloNivelimerHandle, this, &AFacadeCanon::IncreaseNivel, IntervaloNivel, true);
-
-    // visitor=GetWorld()->SpawnActor<AVisitorDisparo>(AVisitorDisparo::StaticClass());
-
-  //  visitor=GetWorld()->SpawnActor< AVisitorMovimientos>(AVisitorMovimientos::StaticClass());
    
 }
 
@@ -61,30 +58,6 @@ void AFacadeCanon::SpawnCanons(int32 Nivel)
     TSubclassOf<AModeloCanon> BmbaClass;
     TSubclassOf<AModeloCanon> HieloClass;
 
-
-   /* if(Nivel==1)
-	{
-		ACanonHielo* HieloClass = GetWorld()->SpawnActor<ACanonHieloNv1>(TopHielo,FRotator::ZeroRotator);
-		HieloClass->Accept(visitor);
-
-
-        ACanonLazer* LazerClass = GetWorld()->SpawnActor<ACanonLazerNv1>(TopLazer, FRotator::ZeroRotator);
-        LazerClass->Accept(visitor);
-	}
-    else if(Nivel==2)
-        {
-        ACanonHielo* HieloClass = GetWorld()->SpawnActor<ACanonHieloNv2>(TopHielo, FRotator::ZeroRotator);
-			HieloClass->Accept(visitor);
-        ACanonLazer* LazerClass = GetWorld()->SpawnActor<ACanonLazerNv2>(TopLazer, FRotator::ZeroRotator);
-        LazerClass->Accept(visitor);
-		}
-    else if(Nivel==3)
-		{
-		ACanonHielo* HieloClass = GetWorld()->SpawnActor<ACanonHieloNv3>(TopHielo, FRotator::ZeroRotator);
-        HieloClass->Accept(visitor);
-        ACanonLazer* LazerClass = GetWorld()->SpawnActor<ACanonLazerNv3>(TopLazer, FRotator::ZeroRotator);
-        LazerClass->Accept(visitor);
-        }*/
 
 
     // Determinar las clases de cañones según el nivel
@@ -125,12 +98,7 @@ void AFacadeCanon::SpawnCanon(TSubclassOf<AModeloCanon> CanonClass, FVector Loca
     {
         FActorSpawnParameters SpawnParams;
         GetWorld()->SpawnActor<AModeloCanon>(CanonClass, Location, FRotator::ZeroRotator, SpawnParams);
-  //      ACanonHielo* canonHielo= Cast<ACanonHielo>(CanonClass);
-  // 
-  //      if(canonHielo)
-		//{
-		//	canonHielo->Accept(visitor);
-		//}
+
     }
 
 

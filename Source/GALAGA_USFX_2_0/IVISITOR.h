@@ -22,10 +22,6 @@ class GALAGA_USFX_2_0_API IIVISITOR
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 
-
-	virtual void Visit(class ANaveEnemigaEspia* NaveEspia) = 0;
-
 	virtual void Visit(class ACanonHielo* CanonHielo) = 0;
-
 	virtual void Visit(class ACanonLazer* CanonLazer) = 0;
 };

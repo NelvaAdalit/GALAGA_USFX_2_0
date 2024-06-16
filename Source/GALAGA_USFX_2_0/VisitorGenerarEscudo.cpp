@@ -69,6 +69,7 @@ void AVisitorGenerarEscudo::GenerarEscudoHielo()
             GetWorld()->GetTimerManager().SetTimer(HandleDesactivarEscudo, this, &AVisitorGenerarEscudo::DesactivarEscudo, 5.0f, false);
         }
     }
+
     if (CanonLazer2 && bEscudo)
     {
        

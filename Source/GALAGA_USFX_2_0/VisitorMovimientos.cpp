@@ -32,7 +32,7 @@ void AVisitorMovimientos::Tick(float DeltaTime)
 	{
 		TiempoDeParabola += DeltaTime;
 
-		AtaqueParabola(DeltaTime);
+		MovimientoParabola(DeltaTime);
 
 	}
 
@@ -40,7 +40,7 @@ void AVisitorMovimientos::Tick(float DeltaTime)
 	{
 		TiempoSempiterno += DeltaTime;
 
-		AtaqueSempiterno(DeltaTime);
+		MovimientoSempiterno(DeltaTime);
 
 	}
 
@@ -65,15 +65,13 @@ void AVisitorMovimientos::Visit(ACanonLazer* CanonLazer)
 
 }
 
-void AVisitorMovimientos::AtaqueSempiterno(float DeltaTime)
+void AVisitorMovimientos::MovimientoSempiterno(float DeltaTime)
 {
 	if (!CanonLazer2) return;
 
 	FVector CurrentLocation = CanonLazer2->GetActorLocation();
-	float Velocidad = 100.0f; // Velocidad del movimiento
-	float Amplitude = 1.0f; // Amplitud del movimiento sinusoidal, ajustada para un movimiento más contenido
-
-	// Movimiento sinusoidal en el eje Z para un movimiento de arriba hacia abajo
+	float Velocidad = 100.0f;
+	float Amplitude = 1.0f; 
 	float NewZ = CurrentLocation.Z + Amplitude * FMath::Sin(TiempoSempiterno * Velocidad * 0.01f);
 
 	FVector NewLocation = FVector(CurrentLocation.X, CurrentLocation.Y, NewZ);
@@ -82,7 +80,7 @@ void AVisitorMovimientos::AtaqueSempiterno(float DeltaTime)
 }
 
 
-void AVisitorMovimientos::AtaqueParabola(float DeltaTime)
+void AVisitorMovimientos::MovimientoParabola(float DeltaTime)
 {
 	if (!CanonHielo2) return;
 	FVector NewLocation =CanonHielo2->GetActorLocation();

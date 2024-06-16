@@ -24,15 +24,16 @@ public:
 	virtual void Tick(float DeltaTime) override;
 public:
 
-	void Visit(class ANaveEnemigaEspia* NaveEspia) override {};
 	void Visit(class ACanonHielo* CanonHielo) override;
 	void Visit(class ACanonLazer* CanonLazer) override;
+
 	void GenerarEscudoHielo();
+	void DesactivarEscudo();
 	class AEscudoVisitor* EscudoActivo;
 	class ACanonHielo* CanonHielo2;
 	class ACanonLazer* CanonLazer2;
 	class ANaveEnemigaEspia* NaveEspia2;
-	void DesactivarEscudo();
+
 	bool bEscudo;
 	FTimerHandle HandleActivarEscudo;
 	FTimerHandle HandleDesactivarEscudo;

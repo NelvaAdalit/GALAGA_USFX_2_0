@@ -25,15 +25,16 @@ public:
 public:
 
 public:
-	void Visit(class ANaveEnemigaEspia* NaveEspia) override {};
+
 	void Visit(class ACanonHielo* CanonHielo) override;
 	void Visit(class ACanonLazer* CanonLazer) override;
-	void AtaqueSempiterno( float DeltaTime);
+	
 
 	class ACanonHielo* CanonHielo2;
 	class ACanonLazer* CanonLazer2;
 
-	void AtaqueParabola(float DeltaTime);
+	void MovimientoSempiterno(float DeltaTime);
+	void MovimientoParabola(float DeltaTime);
 
 
 

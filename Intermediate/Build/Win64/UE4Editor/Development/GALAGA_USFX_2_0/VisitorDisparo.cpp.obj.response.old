@@ -265,9 +265,9 @@
 /FI"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\GALAGA_USFX_2_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Yu"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\GALAGA_USFX_2_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\GALAGA_USFX_2_0Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\proyectilLazer.cpp"
+"D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0\VisitorDisparo.cpp"
 /FI"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\Definitions.GALAGA_USFX_2_0.h"
-/Fo"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\proyectilLazer.cpp.obj"
+/Fo"D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Development\GALAGA_USFX_2_0\VisitorDisparo.cpp.obj"
 /TP
 /GR-
 /W4
