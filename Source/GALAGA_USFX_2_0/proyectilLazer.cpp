@@ -20,7 +20,7 @@ AproyectilLazer::AproyectilLazer()
 	mallaProyectil = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
 	mallaProyectil->SetStaticMesh(ProjectileMeshAsset.Object);
 	mallaProyectil->SetupAttachment(RootComponent);
-	velocidadDisparo = -1000;
+	velocidadDisparo = 1000;
 	Disparodano = 20;
 	mallaProyectil->SetRelativeScale3D(FVector(2.0f, 2.0f, 2.0f));
 
@@ -45,7 +45,22 @@ void AproyectilLazer::Tick(float DeltaTime)
 
 void AproyectilLazer::movimento(float DeltaTime)
 {
-	FVector NewLocation = GetActorLocation() + -GetActorForwardVector() * velocidadDisparo * GetWorld()->GetDeltaSeconds();
+
+
+	FVector CurrentLocation = GetActorLocation();
+	FVector ForwardDirection = GetActorForwardVector();
+
+	// Calcular la nueva ubicación con movimiento sinusoidal
+	float Time = GetWorld()->GetTimeSeconds();
+	float Amplitude = 10.0f; // Amplitud de la onda senoidal
+	float Frequency = 2.0f;   // Frecuencia de la onda senoidal
+
+	// Vector lateral (derecha) del actor
+	FVector RightVector = GetActorRightVector();
+	FVector Offset = RightVector * FMath::Sin(Time * Frequency) * Amplitude;
+
+	// Nueva ubicación combinando el movimiento hacia adelante y el desplazamiento sinusoidal
+	FVector NewLocation = CurrentLocation + (ForwardDirection * velocidadDisparo * DeltaTime) + Offset;
 	SetActorLocation(NewLocation);
 }
 

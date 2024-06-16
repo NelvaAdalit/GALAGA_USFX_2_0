@@ -17,8 +17,9 @@ public:
 	ACanonLazer();
 protected:
 	virtual void BeginPlay() override;
-public:
 
+public:
+	virtual void Tick(float DeltaTime) override;
 
 	virtual void Accept(IIVISITOR* Visitor) override;
 
@@ -26,12 +27,11 @@ public:
 	class AVisitorMovimientos* VisitorMovimientos;
 	class AVisitorGenerarEscudo* VisitorEscudo;
 
-	virtual void Tick(float DeltaTime) override;
+
 
 	void AplicarVisitor();
 
 
 	void Disparar() override {};
-	float reloj;
-	
+
 };

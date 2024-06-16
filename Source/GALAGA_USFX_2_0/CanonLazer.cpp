@@ -29,10 +29,7 @@ void ACanonLazer::BeginPlay()
 
 void ACanonLazer::Accept(IIVISITOR* Visitor)
 {
-
-
 	Visitor->Visit(this);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Visitando CanonLazer"));
 }
 
 void ACanonLazer::Tick(float DeltaTime)
@@ -43,27 +40,18 @@ void ACanonLazer::Tick(float DeltaTime)
 
 void ACanonLazer::AplicarVisitor()
 {
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black, TEXT("Visitando VisitorDisparo3131"));
 	if (VisitorDisparo) {
-		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black, TEXT("Visitando VisitorDisparo"));
 		VisitorDisparo->Visit(this);
 		
 	}
-	
-	else {
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black, TEXT("No se encontro el visitor"));
 
-
-	}
 	if(VisitorMovimientos)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black, TEXT("se encontro el visitor"));
 		VisitorMovimientos->Visit(this);
 	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Black, TEXT("No se encontro el visitor"));
-	}
+	
+
 	if (VisitorEscudo) {
 	
 		VisitorEscudo->Visit(this);

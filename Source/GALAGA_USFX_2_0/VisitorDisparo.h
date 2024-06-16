@@ -33,16 +33,8 @@ public:
 	void AtaqueLineal();
 	void AtaqueDisparoMultiple();
 
-
-
 	class ACanonHielo* CanonHielo2;
 	class ACanonLazer* CanonLazer2;
-	class ANaveEnemigaEspia* NaveEspia2;
-
-public:
-
-
-
 
 protected:
 	

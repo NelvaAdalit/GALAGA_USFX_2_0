@@ -76,6 +76,18 @@ D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2
 D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CanonHieloNv3.gen.cpp
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/CanonHieloNv3.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CanonHieloNv3.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CanonLazer.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/CanonLazer.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CanonLazer.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CanonLazerNv1.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/CanonLazerNv1.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CanonLazerNv1.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CanonLazerNv2.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/CanonLazerNv2.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CanonLazerNv2.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CanonLazerNv3.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/CanonLazerNv3.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\CanonLazerNv3.generated.h
 D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/CapsulaBomba.gen.cpp
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/CapsulaBomba.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
@@ -92,9 +104,13 @@ D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/DirectorDeNaveNodriza.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\DirectorDeNaveNodriza.generated.h
 D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/EscudoNN.gen.cpp
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/EscudoVisitor.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/EscudoVisitor.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\EscudoVisitor.generated.h
 D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/FacadeCanon.gen.cpp
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/FacadeCanon.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\FacadeCanon.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/GALAGA_USFX_2_0.init.gen.cpp
 D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/GALAGA_USFX_2_0GameMode.gen.cpp
 D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/GALAGA_USFX_2_0GameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
@@ -185,3 +201,9 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particl
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
 D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\VisitorDisparo.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/VisitorGenerarEscudo.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/VisitorGenerarEscudo.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\VisitorGenerarEscudo.generated.h
+D:/AVANZADA/GALAGA_USFX_2_0/Intermediate/Build/Win64/UE4Editor/Inc/GALAGA_USFX_2_0/VisitorMovimientos.gen.cpp
+D:\AVANZADA\GALAGA_USFX_2_0\Source\GALAGA_USFX_2_0/VisitorMovimientos.h
+D:\AVANZADA\GALAGA_USFX_2_0\Intermediate\Build\Win64\UE4Editor\Inc\GALAGA_USFX_2_0\VisitorMovimientos.generated.h

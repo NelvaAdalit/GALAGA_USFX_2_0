@@ -32,14 +32,12 @@ void AVisitorGenerarEscudo::Tick(float DeltaTime)
     if (EscudoActivo && CanonHielo2)
     {
         FVector NewLocation = CanonHielo2->GetActorLocation();
-        // Offset the shield's location if needed
         EscudoActivo->SetActorLocation(NewLocation);
     }
     if (EscudoActivo && CanonLazer2)
     {
 
         FVector NewLocation = CanonLazer2->GetActorLocation();
-        // Offset the shield's location if needed
         EscudoActivo->SetActorLocation(NewLocation);
 
     }
@@ -68,13 +66,12 @@ void AVisitorGenerarEscudo::GenerarEscudoHielo()
 
         if (EscudoActivo)
         {
-            // Set the shield to be destroyed after 5 seconds
             GetWorld()->GetTimerManager().SetTimer(HandleDesactivarEscudo, this, &AVisitorGenerarEscudo::DesactivarEscudo, 5.0f, false);
         }
     }
     if (CanonLazer2 && bEscudo)
     {
-        // Spawn the shield actor at CanonHielo's location
+       
         FActorSpawnParameters SpawnParams;
         SpawnParams.Owner = this;
         FRotator Rotation = FRotator::ZeroRotator;
@@ -83,7 +80,7 @@ void AVisitorGenerarEscudo::GenerarEscudoHielo()
 
         if (EscudoActivo)
         {
-            // Set the shield to be destroyed after 5 seconds
+            
             GetWorld()->GetTimerManager().SetTimer(HandleDesactivarEscudo, this, &AVisitorGenerarEscudo::DesactivarEscudo, 5.0f, false);
         }
     }

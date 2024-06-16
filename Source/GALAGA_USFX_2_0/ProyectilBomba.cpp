@@ -19,7 +19,7 @@ AProyectilBomba::AProyectilBomba()
     mallaProyectil = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMesh"));
     mallaProyectil->SetStaticMesh(ProjectileMeshAsset.Object);
     mallaProyectil->SetupAttachment(RootComponent);
-    velocidadDisparo =1000;
+    velocidadDisparo =20;
     Disparodano = 20;
     mallaProyectil->SetRelativeScale3D(FVector(0.8f, 0.8f, 0.8f));
 }
@@ -51,7 +51,7 @@ void AProyectilBomba::movimento(float DeltaTime)
 
     // Calcular la nueva ubicación con movimiento sinusoidal
     float Time = GetWorld()->GetTimeSeconds();
-    float Amplitude = 100.0f; // Amplitud de la onda senoidal
+    float Amplitude = 10.0f; // Amplitud de la onda senoidal
     float Frequency = 4.0f;   // Frecuencia de la onda senoidal
 
     // Vector lateral (derecha) del actor

@@ -4,7 +4,7 @@
 #include "CanonBala.h"
 #include"GALAGA_USFX_2_0Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
-#include "ProyectilBala.h"
+#include "ProyectilBomba.h"
 
 #include "Kismet/GameplayStatics.h"
 ACanonBala::ACanonBala()
@@ -37,7 +37,7 @@ void ACanonBala::Disparar()
 		{
 			FVector Location = GetActorLocation();
 			FRotator Rotation = GetActorRotation();
-			World->SpawnActor<AProyectilBala>(Location, Rotation);
+			World->SpawnActor<AProyectilBomba>(Location, Rotation);
 			
 			NumberFired++;
 
